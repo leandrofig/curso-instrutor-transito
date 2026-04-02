@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Sinalização Viária Parte 1 — Fundamentos da Segurança e Comportamento no Trânsito | Instrutor de Trânsito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ===== Base Reset & Typography ===== */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #1a1a1a;
+            background: linear-gradient(180deg, rgba(246,241,215,0.92) 0%, rgba(235,225,170,0.85) 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .page-container {
+            max-width: 920px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.06);
+            overflow: hidden;
+        }
+
+        /* ===== Site Header with Logo ===== */
+        .site-header {
+            background: #f9f6eb;
+            padding: 18px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #DCBD32;
+        }
+        .site-header .logo img {
+            height: 42px;
+            width: auto;
+        }
+        .site-header .course-badge {
+            background: linear-gradient(135deg, #DCBD32, #c4a82a);
+            color: #1a1a1a;
+            padding: 5px 16px;
+            border-radius: 20px;
+            font-size: 0.78em;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== Breadcrumb ===== */
+        .breadcrumb {
+            padding: 12px 40px;
+            background: #f9f6eb;
+            border-bottom: 1px solid #e8e0c0;
+            font-size: 0.85em;
+            color: #6b5e3e;
+        }
+        .breadcrumb a {
+            color: #8b7a3e;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb .separator { margin: 0 8px; opacity: 0.5; }
+
+        /* ===== Progress Bar ===== */
+        .progress-container { padding: 14px 40px 10px; }
+        .progress-label { font-size: 0.8em; color: #8b7a3e; margin-bottom: 6px; font-weight: 500; }
+        .progress-bar { height: 6px; background: #e8e0c0; border-radius: 3px; overflow: hidden; }
+        .progress-bar .fill {
+            height: 100%;
+            border-radius: 3px;
+            background: linear-gradient(90deg, #DCBD32, #c4a82a);
+            transition: width 0.3s;
+        }
+
+        /* ===== Module Header ===== */
+        .module-header {
+            padding: 32px 40px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #3a3a3a 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .module-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #DCBD32, #e8d44d, #DCBD32);
+        }
+        .module-header .module-label {
+            font-size: 0.82em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #DCBD32;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .module-header h1 {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin: 0 0 4px;
+            color: white;
+        }
+        .module-header .topic-label {
+            font-size: 1em;
+            opacity: 0.88;
+            font-weight: 400;
+        }
+
+        /* ===== Content Body ===== */
+        .content-body { padding: 36px 40px; }
+        img { max-width: 100%; height: auto; }
+        a { color: #8b6914; text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; color: #6b5010; }
+        p { margin-bottom: 1em; text-align: justify; }
+        h2 {
+            color: #1a1a1a;
+            font-size: 1.45em;
+            margin: 2em 0 0.7em;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #DCBD32;
+            font-weight: 700;
+        }
+        h3 { color: #3a3a3a; font-size: 1.2em; margin: 1.4em 0 0.5em; font-weight: 600; }
+        h4 { color: #4a4a4a; font-size: 1.05em; margin: 1.1em 0 0.4em; font-weight: 600; }
+        ul, ol { margin: 0.5em 0 1em 1.5em; }
+        li { margin-bottom: 0.4em; }
+        blockquote {
+            border-left: 3px solid #DCBD32;
+            padding: 12px 20px;
+            margin: 1em 0;
+            color: #4a4a4a;
+            background: #fdf8e1;
+            border-radius: 0 6px 6px 0;
+        }
+        hr { border: none; border-top: 1px solid #e8e0c0; margin: 2em 0; }
+
+        /* ===== Objectives ===== */
+        .objectives {
+            background: #fdf8e1;
+            border-left: 5px solid #DCBD32;
+            padding: 22px 26px;
+            margin: 24px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        .objectives h3 { color: #6b5010; margin-top: 0; font-size: 1.1em; }
+        .objectives h3::before { content: "\1F3AF "; }
+        .objectives ul { margin-bottom: 0; }
+
+        /* ===== Didactic Component Boxes ===== */
+        .didactic-box {
+            padding: 22px 26px;
+            margin: 28px 0;
+            border-radius: 0 10px 10px 0;
+            position: relative;
+        }
+        .didactic-box h4 { margin-top: 0; font-size: 1.05em; }
+        .didactic-box p:last-child, .didactic-box ul:last-child, .didactic-box ol:last-child { margin-bottom: 0; }
+
+        /* Case Study */
+        .case-study {
+            background: #e6fffa;
+            border-left: 5px solid #319795;
+        }
+        .case-study h4 { color: #234e52; }
+        .case-study h4::before { content: "\1F4CB "; }
+
+        /* Reflection */
+        .reflection {
+            background: #fffbeb;
+            border-left: 5px solid #F59E0B;
+        }
+        .reflection h4 { color: #78350f; }
+        .reflection h4::before { content: "\1F914 "; }
+
+        /* Exercise */
+        .exercise {
+            background: #f0fdf4;
+            border-left: 5px solid #22C55E;
+        }
+        .exercise h4 { color: #14532d; }
+        .exercise h4::before { content: "\270F\FE0F "; }
+
+        /* Forum Topic */
+        .forum-topic {
+            background: #faf5ff;
+            border-left: 5px solid #8B5CF6;
+        }
+        .forum-topic h4 { color: #3b0764; }
+        .forum-topic h4::before { content: "\1F4AC "; }
+
+        /* Legal Reference */
+        .legal-reference {
+            background: #f7fafc;
+            border: 1px solid #cbd5e1;
+            border-left: 5px solid #4a5568;
+            border-radius: 0 10px 10px 0;
+        }
+        .legal-reference h4 { color: #1a202c; }
+        .legal-reference h4::before { content: "\2696\FE0F "; }
+        .legal-reference blockquote { font-style: italic; background: #edf2f7; border-left-color: #4a5568; }
+
+        /* Video Link */
+        .video-link {
+            background: #fef2f2;
+            border-left: 5px solid #EF4444;
+        }
+        .video-link h4 { color: #7f1d1d; }
+        .video-link h4::before { content: "\1F3AC "; }
+        .video-link a { color: #dc2626; font-weight: 600; }
+
+        /* Warning */
+        .warning {
+            background: #fef2f2;
+            border-left: 5px solid #dc2626;
+            padding: 16px 22px;
+            margin: 22px 0;
+            border-radius: 0 8px 8px 0;
+            font-weight: 500;
+        }
+        .warning::before { content: "\26A0\FE0F "; font-size: 1.1em; }
+
+        /* Important */
+        .important {
+            background: #fffbeb;
+            border-left: 5px solid #F59E0B;
+            padding: 16px 22px;
+            margin: 22px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .important::before { content: "\2757 "; font-size: 1.1em; }
+
+        /* Tip */
+        .tip {
+            background: #ecfdf5;
+            border-left: 5px solid #10b981;
+            padding: 16px 22px;
+            margin: 22px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .tip::before { content: "\1F4A1 "; font-size: 1.1em; }
+
+        /* ===== Glossary ===== */
+        .glossary {
+            background: #fdf8e1;
+            border: 1px solid #e8d44d;
+            padding: 26px;
+            margin: 32px 0;
+            border-radius: 12px;
+        }
+        .glossary h3 { color: #6b5010; margin-top: 0; border-bottom: 2px solid #DCBD32; padding-bottom: 8px; }
+        .glossary h3::before { content: "\1F4D6 "; }
+        .glossary dl { margin: 0; }
+        .glossary dt { font-weight: 700; color: #6b5010; margin-top: 14px; }
+        .glossary dd { margin-left: 20px; margin-bottom: 6px; color: #4a4a4a; }
+
+        /* ===== Bibliography ===== */
+        .bibliography {
+            background: #faf9f2;
+            border-top: 4px solid #DCBD32;
+            padding: 26px;
+            margin-top: 40px;
+            border-radius: 0 0 12px 12px;
+        }
+        .bibliography h3 { color: #4a4a4a; margin-top: 0; }
+        .bibliography h3::before { content: "\1F4DA "; }
+        .bibliography h4 { color: #6b5e3e; margin-top: 16px; font-size: 1em; }
+        .bibliography ul { list-style-type: disc; }
+        .bibliography li { margin-bottom: 6px; font-size: 0.93em; }
+
+        /* ===== Diagrams / Figures ===== */
+        .diagram { text-align: center; margin: 28px 0; }
+        .diagram img {
+            max-width: 100%;
+            border: 1px solid #e8e0c0;
+            border-radius: 10px;
+            padding: 12px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .diagram figcaption {
+            font-size: 0.88em;
+            color: #6b5e3e;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* ===== Tables ===== */
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.93em; }
+        thead th {
+            background: #1a1a1a;
+            color: #DCBD32;
+            padding: 12px 14px;
+            text-align: left;
+            font-weight: 600;
+        }
+        tbody td { padding: 10px 14px; border-bottom: 1px solid #e8e0c0; }
+        tbody tr:nth-child(even) { background: #faf9f2; }
+        tbody tr:hover { background: #f5f0d0; }
+
+        /* ===== Closing Message ===== */
+        .closing {
+            text-align: center;
+            padding: 28px;
+            margin-top: 32px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            color: #DCBD32;
+        }
+        .closing p { text-align: center; margin: 0; color: #e8e0c0; }
+        .closing .emoji { font-size: 1.5em; display: block; margin-bottom: 10px; }
+
+        /* ===== Topic Navigation ===== */
+        .topic-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-top: 1px solid #e8e0c0;
+            background: #faf9f2;
+        }
+        .topic-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #6b5010;
+            padding: 10px 20px;
+            border: 2px solid #DCBD32;
+            border-radius: 8px;
+            font-size: 0.9em;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .topic-nav a:hover {
+            background: #DCBD32;
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .topic-nav .placeholder { visibility: hidden; padding: 10px 20px; }
+
+        /* ===== Footer ===== */
+        .footer {
+            text-align: center;
+            padding: 18px 40px;
+            background: #1a1a1a;
+            font-size: 0.8em;
+            color: #8b7a3e;
+            border-radius: 0 0 16px 16px;
+        }
+        .footer a { color: #DCBD32; }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            body { padding: 8px; }
+            .content-body { padding: 20px; }
+            .site-header { padding: 14px 20px; }
+            .site-header .logo img { height: 32px; }
+            .breadcrumb { padding: 10px 20px; }
+            .module-header { padding: 24px 20px; }
+            .module-header h1 { font-size: 1.25em; }
+            .progress-container { padding: 10px 20px 8px; }
+            .topic-nav { padding: 15px 20px; flex-direction: column; gap: 10px; }
+            .topic-nav a { width: 100%; justify-content: center; }
+            .topic-nav .placeholder { display: none; }
+            table { font-size: 0.85em; }
+            thead th, tbody td { padding: 8px 10px; }
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .page-container { box-shadow: none; }
+            .topic-nav, .progress-container, .footer, .site-header { display: none; }
+            .module-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .didactic-box { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="site-header">
+            <div class="logo">
+                <img src="data:image/png;base64,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" alt="Instrutor de Trânsito">
+            </div>
+            <span class="course-badge">CURSO 45h/a</span>
+        </div>
+
+        <div class="breadcrumb">
+            <a href="index.html">Curso de Reciclagem</a>
+            <span class="separator">&rsaquo;</span>
+            <a href="index.html">Módulo 03</a>
+            <span class="separator">&rsaquo;</span>
+            Tópico 10: Sinalização Viária Parte 1
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-label">Módulo 03 — Tópico 10 de 17</div>
+            <div class="progress-bar">
+                <div class="fill" style="width: 58%"></div>
+            </div>
+        </div>
+
+        <div class="module-header">
+            <div class="module-label">Módulo 03 — Fundamentos da Segurança e Comportamento no Trânsito</div>
+            <h1>Tópico 10: Sinalização Viária Parte 1</h1>
+            <div class="topic-label">Curso de Reciclagem para Condutores — 45 horas/aula | Resolução CONTRAN 1020/2025</div>
+        </div>
+
+        <div class="content-body">
+            <div class="objectives">
+<h3>Objetivos de Aprendizagem</h3>
+<ul>
+  <li>Identificar e interpretar corretamente todas as placas de regulamentação (grupos R-1 a R-7) conforme o Manual Brasileiro de Sinalização de Trânsito (MBST)</li>
+  <li>Conhecer as características técnicas das placas verticais: dimensionamento, cores, materiais e retroreflexividade</li>
+  <li>Compreender os critérios de posicionamento correto das placas na via pública</li>
+  <li>Capacitar-se para ensinar candidatos a condutores sobre os grupos de sinalização de regulamentação com precisão terminológica</li>
+  <li>Identificar e corrigir as interpretações equivocadas mais frequentes sobre placas de regulamentação</li>
+  <li>Relacionar a sinalização viária aos dispositivos legais do CTB e às normas técnicas vigentes</li>
+</ul>
+</div>
+
+<p>A sinalização viária é a linguagem silenciosa do trânsito — um sistema de comunicação universal que regula, adverte e orienta todos os usuários da via. Para o instrutor de trânsito, dominar esse sistema não é apenas um requisito técnico: é uma responsabilidade pedagógica fundamental. Cada candidato que passa pelas suas mãos precisará interpretar placas em frações de segundo, tomando decisões que podem determinar a vida ou a morte. Por isso, a qualidade do seu ensino sobre sinalização tem impacto direto na segurança viária de toda a comunidade.</p>
+
+<p>A sinalização vertical de regulamentação, objeto central deste tópico, compõe o grupo mais imperativo do sistema: são ordens, proibições e restrições emanadas do poder público, com força legal respaldada pelo Código de Trânsito Brasileiro (CTB) — Lei nº 9.503/1997 — e detalhadas tecnicamente pelo Manual Brasileiro de Sinalização de Trânsito (MBST), publicado pelo CONTRAN. Descumprir uma placa de regulamentação equivale a desobedecer a lei, e o instrutor deve transmitir essa gravidade com clareza e firmeza ao candidato.</p>
+
+<p>Neste tópico, faremos um percurso sistemático pelos sete grupos de placas de regulamentação (R-1 a R-7), analisando não apenas o significado de cada sinal, mas também seus atributos técnicos (dimensões, cores, retroreflexividade), critérios de posicionamento e, especialmente, os erros de interpretação que você, como instrutor, deverá monitorar e corrigir em seus alunos. A abordagem aqui é dupla: você precisa saber o conteúdo e saber ensiná-lo.</p>
+
+<div class="didactic-box legal-reference">
+<h4>Referência Legal</h4>
+<p><strong>CTB — Art. 80:</strong> "Os sinais de trânsito classificam-se em: I — sinalização vertical; II — sinalização horizontal; III — dispositivos de sinalização auxiliar; IV — luz de sinalização; V — gestos do agente de trânsito e do condutor."</p>
+<p><strong>CTB — Art. 87:</strong> "A sinalização vertical é um subsistema da sinalização viária que se utiliza de placas, painéis ou dispositivos instalados na posição vertical, junto ou suspensa sobre a pista, contendo mensagem de caráter permanente ou variável, e se subdivide em: I — de regulamentação; II — de advertência; III — de indicação."</p>
+<p><strong>CTB — Art. 88:</strong> "As placas de regulamentação têm por finalidade informar aos usuários as condições, proibições, obrigações ou restrições no uso das vias. Suas mensagens são imperativas e o desrespeito a elas constitui infração."</p>
+<p><strong>Resolução CONTRAN 1020/2025:</strong> Atualiza os requisitos para formação de instrutores, incluindo a exigência de domínio técnico e didático sobre sinalização viária para fins de habilitação e reciclagem.</p>
+</div>
+
+<h2>1. Fundamentos da Sinalização Vertical de Regulamentação</h2>
+
+<h3>1.1 Conceito e Hierarquia da Sinalização</h3>
+
+<p>A sinalização vertical de regulamentação integra o subsistema de sinalização vertical do trânsito brasileiro. Diferentemente das placas de advertência (que alertam para situações de risco) e das de indicação (que orientam a localização e os serviços), as placas de regulamentação <strong>impõem uma conduta obrigatória</strong>. O condutor não tem discricionariedade: deve obedecer, salvo situações excepcionais expressamente previstas em lei (como desvio de emergência orientado por agente de trânsito).</p>
+
+<p>Quando há conflito entre a sinalização e a norma geral do CTB, prevalece a sinalização específica — pois ela reflete a adaptação local das regras gerais às peculiaridades daquela via. Se há conflito entre agente de trânsito e sinalização, prevalece a ordem do agente (CTB, Art. 29, caput). Isso é fundamental para o instrutor comunicar corretamente.</p>
+
+<h3>1.2 Características Visuais Gerais das Placas de Regulamentação</h3>
+
+<p>As placas de regulamentação possuem padronização visual reconhecível internacionalmente:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Elemento Visual</th>
+      <th>Padrão</th>
+      <th>Justificativa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Forma</td>
+      <td>Circular (maioria) ou octogonal (parada obrigatória)</td>
+      <td>Diferenciação de advertência (losango) e indicação (retangular/quadrada)</td>
+    </tr>
+    <tr>
+      <td>Borda</td>
+      <td>Vermelha (proibições/obrigações) ou vermelha com branco (parada)</td>
+      <td>Cor de alerta e imperatividade — convenção da Convenção de Viena</td>
+    </tr>
+    <tr>
+      <td>Fundo</td>
+      <td>Branco (maioria) ou vermelho (parada obrigatória/sentido proibido)</td>
+      <td>Alto contraste para legibilidade em diferentes condições de luz</td>
+    </tr>
+    <tr>
+      <td>Símbolo/Texto</td>
+      <td>Preto (símbolo) ou branco (em fundo vermelho)</td>
+      <td>Contraste máximo</td>
+    </tr>
+    <tr>
+      <td>Barra diagonal</td>
+      <td>Vermelha, sobreposta ao símbolo</td>
+      <td>Indica proibição do elemento representado</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="important">
+<strong>Importante para o instrutor:</strong> A padronização visual é uma convenção adotada pelo Brasil conforme a Convenção de Viena sobre Sinalização Viária (1968), da qual o país é signatário. Ressalte ao candidato que a mesma lógica de leitura visual se aplica em outros países, facilitando a mobilidade internacional.
+</div>
+
+<h2>2. Características Técnicas das Placas Verticais</h2>
+
+<h3>2.1 Dimensionamento</h3>
+
+<p>O MBST define dimensões em função da velocidade regulamentada na via e do tipo de via. Para placas circulares de regulamentação, os diâmetros padrão são:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo de Via</th>
+      <th>Diâmetro Mínimo</th>
+      <th>Observações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Via de trânsito rápido / rodovia</td>
+      <td>900 mm</td>
+      <td>Pode ser 1.200 mm em trechos de alta velocidade</td>
+    </tr>
+    <tr>
+      <td>Via arterial / coletora urbana</td>
+      <td>750 mm</td>
+      <td>Padrão mais comum em capitais</td>
+    </tr>
+    <tr>
+      <td>Via local urbana / residencial</td>
+      <td>500 mm</td>
+      <td>Tráfego de baixa velocidade</td>
+    </tr>
+    <tr>
+      <td>Parada Obrigatória (R-1) — octogonal</td>
+      <td>750 mm (lado)</td>
+      <td>Pode ser 900 mm em rodovias</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A escolha inadequada do tamanho compromete a legibilidade e pode ser considerada irregularidade de engenharia de tráfego. O instrutor deve ensinar o candidato a reconhecer que uma placa muito pequena para a via pode ter sua percepção prejudicada — argumento útil para discussões sobre responsabilidade na ocorrência de sinistros.</p>
+
+<h3>2.2 Cores e Contraste</h3>
+
+<p>As especificações cromáticas das placas seguem a norma ABNT NBR 14644, que define as coordenadas colorimétricas de cada cor para garantir uniformidade nacional. As tintas e películas retroreflexivas devem atender às especificações do INMETRO para cada tipo de via.</p>
+
+<h3>2.3 Retroreflexividade</h3>
+
+<p>A retroreflexividade é a propriedade do material de devolver a luz incidente (faróis) de volta ao observador, garantindo visibilidade noturna. O MBST exige:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo de Película</th>
+      <th>Aplicação</th>
+      <th>Vida Útil Mínima</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Grau Técnico (Tipo I)</td>
+      <td>Vias locais, baixo tráfego</td>
+      <td>7 anos</td>
+    </tr>
+    <tr>
+      <td>Alta Intensidade (Tipo III/IV)</td>
+      <td>Vias coletoras e arteriais</td>
+      <td>10 anos</td>
+    </tr>
+    <tr>
+      <td>Diamante / Prismático (Tipo IX/XI)</td>
+      <td>Rodovias, vias de trânsito rápido</td>
+      <td>12 anos</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="tip">
+<strong>Dica pedagógica:</strong> Ao ensinar sobre retroreflexividade, peça ao candidato que observe a diferença visual de uma placa nova versus uma placa antiga desgastada à noite. A degradação da película é uma causa subestimada de sinistros noturnos — o condutor "não viu" a placa porque ela perdeu sua capacidade de retroreflexão.
+</div>
+
+<h3>2.4 Posicionamento das Placas na Via</h3>
+
+<p>O posicionamento correto é determinante para a eficácia da sinalização. Os critérios do MBST estabelecem:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Critério</th>
+      <th>Especificação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Distância lateral (bordo da placa ao bordo da pista)</td>
+      <td>Mínimo 0,30 m em vias urbanas; mínimo 1,20 m em rodovias</td>
+    </tr>
+    <tr>
+      <td>Altura livre (bordo inferior da placa ao nível da pista)</td>
+      <td>Mínimo 2,00 m em vias urbanas; 1,50 m onde não há circulação de pedestres</td>
+    </tr>
+    <tr>
+      <td>Posição longitudinal</td>
+      <td>No ponto de aplicação da restrição ou até 30 m antes</td>
+    </tr>
+    <tr>
+      <td>Angulação</td>
+      <td>Perpendicular ao eixo da via (±5°); em curvas, perpendicular à trajetória predominante</td>
+    </tr>
+    <tr>
+      <td>Placa sobre a pista (pórtico)</td>
+      <td>Bordo inferior a no mínimo 5,50 m do nível da pista</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="warning">
+<strong>Atenção:</strong> Placa corretamente implantada é aquela que pode ser vista a tempo pelo condutor para agir com segurança. A "distância de visibilidade" deve ser compatível com a velocidade da via: a placa de limite de velocidade deve ser visível pelo menos à distância de frenagem segura antes do ponto de redução.
+</div>
+
+<div class="didactic-box case-study">
+<h4>Estudo de Caso: A Placa Escondida pela Vegetação</h4>
+<p>Em uma via coletora de médio porte em região metropolitana, um candidato em aula prática passou sob o limite de 40 km/h enquanto trafegava a 60 km/h. Na ocorrência, o candidato alegou "não ter visto a placa". Investigação posterior constatou que a placa estava obstruída por galhos de árvore em crescimento desordenado — reduzindo a visibilidade a menos de 10 metros.</p>
+<p><strong>Questões para o instrutor:</strong></p>
+<ul>
+  <li>Quem é responsável pela manutenção das condições de visibilidade das placas? (Resposta: o órgão ou entidade de trânsito com circunscrição sobre a via — CTB, Art. 21 e 24)</li>
+  <li>A alegação do candidato o isenta de responsabilidade? (Resposta: parcialmente — há corresponsabilidade do órgão gestor, mas o condutor deve adaptar sua velocidade às condições da via)</li>
+  <li>Como o instrutor deve orientar o candidato a agir quando a sinalização está comprometida?</li>
+</ul>
+<p><strong>Lição pedagógica:</strong> Use este caso para ensinar que a <em>ausência de sinalização visível</em> não autoriza qualquer conduta — o CTB estabelece regras gerais (Art. 29) que se aplicam mesmo sem sinalização específica. O condutor responsável adapta-se às condições, independentemente das placas.</p>
+</div>
+
+<h2>3. Grupo R-1 — Placas de Parada</h2>
+
+<h3>3.1 R-1: Parada Obrigatória</h3>
+
+<p>A placa R-1 (Parada Obrigatória) é a mais imperativa do sistema viário. Sua forma octogonal vermelha com borda e letras brancas "PARE" foi adotada mundialmente para máxima diferenciação visual — é a única placa de forma octogonal no sistema brasileiro, garantindo reconhecimento imediato mesmo com visibilidade parcial.</p>
+
+<p><strong>Determinação legal:</strong> O condutor deve efetuar parada completa — velocidade zero — antes de cruzar a linha de parada (faixa de retenção pintada na via) ou, na ausência desta, antes de ingressar na interseção. Após a parada, deve verificar a presença de outros veículos e pedestres antes de prosseguir, cedendo passagem a todos que estejam na via prioritária.</p>
+
+<div class="important">
+<strong>Distinção crucial para candidatos:</strong> "Parar" no contexto da R-1 significa velocidade zero, mesmo que por frações de segundo. Reduzir a velocidade sem parar completamente (chamado popularmente de "parada inglesa" ou "parada Califórnia") constitui infração de natureza grave (Art. 44, CTB) com multa e pontuação na CNH. O instrutor deve demonstrar na prática como executar a parada correta: redução progressiva, velocidade zero antes da linha, espera ativa da janela de segurança.
+</div>
+
+<h3>3.2 R-1a: Parada Obrigatória com Indicação de Pista</h3>
+
+<p>Variante da R-1 que especifica em qual pista ou faixa a parada se aplica. Utilizada em interseções complexas com múltiplas faixas de diferentes destinos.</p>
+
+<div class="didactic-box reflection">
+<h4>Questão para Reflexão</h4>
+<p>Um candidato pergunta: "Se eu chegar à placa PARE de madrugada, sem nenhum veículo à vista, ainda preciso parar completamente?" Como você, instrutor, responderia a essa pergunta de forma tecnicamente correta e didaticamente eficaz?</p>
+<p><strong>Orientação de resposta:</strong> Sim, a parada é obrigatória independentemente das condições de tráfego. A lei não prevê exceção por horário ou ausência visual de outros veículos. Além disso, "não ver veículos" não significa que eles não existam — o ângulo de visão em interseções pode ser limitado. Aproveite para reforçar o princípio da direção defensiva: o que não é visto pode existir.</p>
+</div>
+
+<h2>4. Grupo R-2 — Placas de Preferência</h2>
+
+<h3>4.1 R-2: Dê a Preferência</h3>
+
+<p>A placa R-2 (Dê a Preferência) utiliza forma triangular invertida, com borda e símbolo vermelhos sobre fundo branco — convenção internacional de cedência de passagem. O condutor deve reduzir a velocidade e estar preparado para parar, cedendo passagem aos veículos que trafegam pela via com preferência.</p>
+
+<p><strong>Distinção em relação à R-1:</strong> Na R-2, a parada não é obrigatória se não houver veículos conflitantes. O condutor avalia a situação e, se houver espaço seguro, pode cruzar ou ingressar sem parar. Na R-1, a parada é sempre mandatória. Esta distinção é frequentemente confundida pelos candidatos e deve ser trabalhada com exercícios práticos.</p>
+
+<h3>4.2 R-2a: Dê a Preferência ao Pedestre</h3>
+
+<p>Indica que o pedestre tem prioridade naquela travessia específica. Não confundir com faixa de pedestres regulamentada (que dispensa sinalização vertical específica para gerar obrigação — CTB, Art. 70).</p>
+
+<div class="didactic-box reflection">
+<h4>Questão para Reflexão</h4>
+<p>Na sua cidade, quantas interseções sem semáforo você conhece onde os condutores frequentemente desrespeitam a R-2 por não perceberem a diferença entre "reduzir" e "ceder passagem completa"? Como você ensinaria um candidato a tomar a decisão correta em tempo real?</p>
+<p><strong>Orientação de resposta:</strong> Estimule o candidato a usar o critério da velocidade segura de abordagem: ao se aproximar de uma R-2, deve reduzir suficientemente para poder parar caso surja veículo com preferência. A tomada de decisão deve ser antecipada, não reativa. Treine isso em aula prática com simulações progressivas de densidade de tráfego.</p>
+</div>
+
+<h2>5. Grupo R-3 — Placas de Proibições de Movimentos Veiculares</h2>
+
+<p>O grupo R-3 é o mais extenso do sistema de regulamentação, abrangendo todas as proibições relacionadas a manobras e movimentos dos veículos. São placas de forma circular, fundo branco, borda vermelha, símbolo preto e — quando se trata de proibição de determinado elemento — barra diagonal vermelha sobreposta.</p>
+
+<h3>5.1 Principais Placas R-3</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Denominação</th>
+      <th>Descrição do Símbolo</th>
+      <th>Infração (CTB)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R-3a</td>
+      <td>Proibido Virar à Esquerda</td>
+      <td>Seta curvada para esquerda com barra diagonal vermelha</td>
+      <td>Art. 44 — Grave</td>
+    </tr>
+    <tr>
+      <td>R-3b</td>
+      <td>Proibido Virar à Direita</td>
+      <td>Seta curvada para direita com barra diagonal vermelha</td>
+      <td>Art. 44 — Grave</td>
+    </tr>
+    <tr>
+      <td>R-3c</td>
+      <td>Proibido Retornar à Esquerda</td>
+      <td>Seta de retorno para esquerda com barra diagonal vermelha</td>
+      <td>Art. 44 — Grave</td>
+    </tr>
+    <tr>
+      <td>R-3d</td>
+      <td>Proibido Retornar à Direita</td>
+      <td>Seta de retorno para direita com barra diagonal vermelha</td>
+      <td>Art. 44 — Grave</td>
+    </tr>
+    <tr>
+      <td>R-3e</td>
+      <td>Proibido Ultrapassar</td>
+      <td>Dois veículos, um ultrapassando, com barra diagonal vermelha</td>
+      <td>Art. 44 — Gravíssima (dobro)</td>
+    </tr>
+    <tr>
+      <td>R-3f</td>
+      <td>Proibido Mudar de Faixa ou Pista de Trânsito</td>
+      <td>Veículo em mudança de faixa com barra diagonal vermelha</td>
+      <td>Art. 44 — Grave</td>
+    </tr>
+    <tr>
+      <td>R-3g</td>
+      <td>Proibido Trafegar na Faixa da Esquerda</td>
+      <td>Veículo na faixa da esquerda com barra diagonal vermelha</td>
+      <td>Art. 44 — Grave</td>
+    </tr>
+    <tr>
+      <td>R-3p</td>
+      <td>Proibido Circular com Bicicletas</td>
+      <td>Bicicleta com barra diagonal vermelha</td>
+      <td>Art. 44 — Leve</td>
+    </tr>
+    <tr>
+      <td>R-3q</td>
+      <td>Proibido Circular com Pedestres</td>
+      <td>Pedestre com barra diagonal vermelha</td>
+      <td>Art. 44 — Leve</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>5.2 Erros de Interpretação Frequentes no Grupo R-3</h3>
+
+<p><strong>Erro 1 — Confusão entre virar e retornar:</strong> Muitos candidatos interpretam "Proibido Retornar" como "Proibido Virar" ou vice-versa. Diferencie: "virar" é um giro de até 90° (conversão), enquanto "retornar" é um giro de 180° (inversão de sentido).</p>
+
+<p><strong>Erro 2 — Alcance temporal da proibição:</strong> A proibição de um grupo R-3 vigora até ser revogada por outra placa (por exemplo, a placa R-3e "Proibido Ultrapassar" seguida de R-3e com legenda "Fim da proibição") ou até o fim do trecho sinalizado. Candidatos frequentemente assumem que a proibição "acabou" ao sair da área imediata da placa.</p>
+
+<p><strong>Erro 3 — Proibição para todos os veículos vs. específica:</strong> Quando a placa representa apenas um tipo de veículo com a barra diagonal, a proibição é somente para aquele tipo. Quando a placa mostra uma manobra proibida sem especificação de veículo, aplica-se a todos.</p>
+
+<div class="didactic-box exercise">
+<h4>Atividade de Fixação — Reconhecimento Rápido de Placas R-3</h4>
+<p><strong>Objetivo:</strong> Treinar a leitura rápida e a distinção entre placas semelhantes do grupo R-3.</p>
+<p><strong>Material:</strong> Conjunto de fichas com imagens de placas R-3 (impressas ou em slides).</p>
+<p><strong>Procedimento:</strong></p>
+<ol>
+  <li>Exiba cada placa por 3 segundos (simulando o tempo de visão em velocidade urbana)</li>
+  <li>O candidato deve nomear a placa e citar a consequência de seu desrespeito (tipo de infração)</li>
+  <li>Após 5 acertos consecutivos, introduza placas-armadilha (placas muito similares, como R-3a vs. R-3c)</li>
+  <li>Registre as placas com maior taxa de erro para revisão dirigida</li>
+</ol>
+<p><strong>Variação avançada:</strong> Apresente sequências de placas como aparecem em uma via real (com espaçamento temporal) e peça ao candidato que descreva o regime de circulação completo.</p>
+</div>
+
+<h2>6. Grupo R-4 — Placas de Sentidos de Circulação</h2>
+
+<h3>6.1 Características do Grupo R-4</h3>
+
+<p>O grupo R-4 regula os sentidos permitidos e proibidos de circulação. Diferentemente do grupo R-3 (que proíbe manobras específicas), o R-4 define o próprio sentido em que os veículos podem ou não circular em determinado trecho.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Denominação</th>
+      <th>Características Visuais</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R-4a</td>
+      <td>Sentido Proibido</td>
+      <td>Fundo vermelho, seta horizontal branca apontando para a esquerda — indica que o condutor está indo na contramão. É a placa que o condutor em contramão vê ao adentrar a via de mão única.</td>
+    </tr>
+    <tr>
+      <td>R-4b</td>
+      <td>Proibido Seguir em Frente</td>
+      <td>Seta vertical (seguir em frente) com barra diagonal vermelha — só podem seguir veículos que vão dobrar</td>
+    </tr>
+    <tr>
+      <td>R-4c</td>
+      <td>Sentido Obrigatório à Direita</td>
+      <td>Fundo azul, seta curvada para direita em branco — todos os veículos devem virar à direita</td>
+    </tr>
+    <tr>
+      <td>R-4d</td>
+      <td>Sentido Obrigatório à Esquerda</td>
+      <td>Fundo azul, seta curvada para esquerda em branco</td>
+    </tr>
+    <tr>
+      <td>R-4e</td>
+      <td>Passagem Obrigatória pela Direita</td>
+      <td>Seta contornando obstáculo pela direita — usado em canteiros e ilhas</td>
+    </tr>
+    <tr>
+      <td>R-4f</td>
+      <td>Passagem Obrigatória pela Esquerda</td>
+      <td>Seta contornando obstáculo pela esquerda</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="warning">
+<strong>Ponto crítico — R-4a vs. R-4c/d:</strong> A diferença visual entre a R-4a (sentido proibido, fundo vermelho) e as R-4c/d (sentido obrigatório, fundo azul) é fundamental. O candidato deve aprender a distinguir imediatamente: fundo <strong>vermelho</strong> = proibição; fundo <strong>azul</strong> = obrigação. A inversão pode resultar em contramão — um dos tipos de infração com maior risco de sinistro grave.
+</div>
+
+<div class="didactic-box reflection">
+<h4>Questão para Reflexão</h4>
+<p>Por que a placa R-4a (Sentido Proibido) tem fundo vermelho em vez do fundo branco com borda vermelha que é o padrão das demais placas de regulamentação? O que essa diferença visual comunica ao condutor de forma instantânea?</p>
+<p><strong>Orientação de resposta:</strong> O fundo totalmente vermelho é uma sinalização de alerta máximo — indica uma situação de perigo imediato se a placa for ignorada (contramão). A escolha cromática não é arbitrária: faz parte do design intencional do sistema para que o condutor reaja instintivamente, mesmo antes de processar conscientemente o símbolo da placa. Isso exemplifica como a sinalização viária é fundamentada em psicologia da percepção visual.</p>
+</div>
+
+<h2>7. Grupo R-5 — Placas de Regulamentação de Velocidade</h2>
+
+<h3>7.1 Limites de Velocidade e o CTB</h3>
+
+<p>O grupo R-5 trata da regulamentação de velocidade — provavelmente o grupo mais frequentemente desrespeitado pelos condutores brasileiros. O CTB (Art. 61) estabelece os limites genéricos, que podem ser alterados (para mais ou para menos) pela sinalização específica:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo de Via</th>
+      <th>Limite Genérico (CTB, Art. 61)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Via rural de pista dupla (rodovia)</td>
+      <td>110 km/h</td>
+    </tr>
+    <tr>
+      <td>Via rural de pista simples</td>
+      <td>80 km/h</td>
+    </tr>
+    <tr>
+      <td>Via urbana de trânsito rápido</td>
+      <td>80 km/h</td>
+    </tr>
+    <tr>
+      <td>Via urbana arterial</td>
+      <td>60 km/h</td>
+    </tr>
+    <tr>
+      <td>Via urbana coletora</td>
+      <td>40 km/h</td>
+    </tr>
+    <tr>
+      <td>Via urbana local</td>
+      <td>30 km/h</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>7.2 Placas do Grupo R-5</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Denominação</th>
+      <th>Características</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R-19</td>
+      <td>Velocidade Máxima Permitida</td>
+      <td>Circular branca com borda vermelha e o numeral da velocidade em preto. Ex: "60" indica que a velocidade máxima é 60 km/h.</td>
+    </tr>
+    <tr>
+      <td>R-19a</td>
+      <td>Velocidade Máxima Permitida (variável por horário)</td>
+      <td>Inclui painel ou legenda indicando o horário de vigência do limite</td>
+    </tr>
+    <tr>
+      <td>R-19b</td>
+      <td>Velocidade Máxima para Determinado Tipo de Veículo</td>
+      <td>Inclui o símbolo do tipo de veículo ao qual se aplica (ex: caminhões)</td>
+    </tr>
+    <tr>
+      <td>R-20</td>
+      <td>Velocidade Mínima Obrigatória</td>
+      <td>Fundo azul com numeral branco — obriga o condutor a manter no mínimo a velocidade indicada. Usada em vias expressas para evitar que veículos lentos comprometam o fluxo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>7.3 Tolerâncias e Infrações por Velocidade</h3>
+
+<p>A legislação brasileira prevê faixas de infração em função do percentual de excesso sobre o limite:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Excesso</th>
+      <th>Natureza da Infração</th>
+      <th>Pontos na CNH</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Até 20% acima do limite</td>
+      <td>Leve</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>De 20% a 50% acima do limite</td>
+      <td>Grave</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Acima de 50% do limite</td>
+      <td>Gravíssima (multiplicador 3)</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="tip">
+<strong>Dica pedagógica:</strong> Transforme números em situações concretas para o candidato. Em uma via com limite de 60 km/h: "leve" começa acima de 72 km/h; "grave" começa em 73 km/h; "gravíssima" começa em 91 km/h. Muitos candidatos ficam surpresos ao perceber o quão estreita é a "zona de segurança" legal.
+</div>
+
+<h2>8. Grupo R-6 — Placas de Estacionamento e Parada</h2>
+
+<h3>8.1 Distinção entre Parar e Estacionar</h3>
+
+<p>Esta é uma das distinções mais importantes e frequentemente confundidas do CTB:</p>
+
+<ul>
+  <li><strong>Parada</strong> (CTB, Art. 67): imobilização do veículo com duração inferior a 1 minuto, destinada ao embarque ou desembarque de passageiros ou para entrega ou coleta de objetos, com o condutor no veículo.</li>
+  <li><strong>Estacionamento</strong> (CTB, Art. 67): imobilização do veículo por tempo superior a 1 minuto ou com o condutor fora do veículo, exceto nas situações de parada.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Denominação</th>
+      <th>Símbolo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R-6a</td>
+      <td>Proibido Parar e Estacionar</td>
+      <td>Círculo com borda vermelha, barra diagonal vermelha e letra "E" em vermelho sobre fundo branco</td>
+    </tr>
+    <tr>
+      <td>R-6b</td>
+      <td>Proibido Estacionar</td>
+      <td>Círculo com borda vermelha e "E" vermelho riscado — parar é permitido, estacionar não</td>
+    </tr>
+    <tr>
+      <td>R-6c</td>
+      <td>Estacionamento Regulamentado</td>
+      <td>Fundo azul com "E" branco e legenda indicando dias e horários de restrição</td>
+    </tr>
+    <tr>
+      <td>R-6d</td>
+      <td>Estacionamento Exclusivo para Determinados Veículos</td>
+      <td>Fundo azul com símbolo do veículo ou usuário (ex: pessoa com deficiência, idoso, gestante)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="important">
+<strong>Ponto pedagógico crítico:</strong> A diferença entre R-6a e R-6b tem consequências práticas imediatas. Na R-6b, o motorista pode parar por até 1 minuto para embarque/desembarque. Na R-6a, nem isso é permitido. O candidato deve ser treinado a ler a placa completa — incluindo eventual legenda de dias e horários — antes de tomar a decisão de parar ou estacionar.
+</div>
+
+<h2>9. Grupo R-7 — Placas de Pedestres e Ciclistas</h2>
+
+<h3>9.1 Placas Voltadas à Proteção de Usuários Vulneráveis</h3>
+
+<p>O grupo R-7 reflete a crescente preocupação com a mobilidade ativa e a proteção dos usuários mais vulneráveis da via pública. O CTB (Art. 29, §2º) já estabelece a prioridade geral dos pedestres, mas as placas do grupo R-7 especificam obrigações e restrições em pontos críticos.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Denominação</th>
+      <th>Aplicação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R-7a</td>
+      <td>Uso Exclusivo de Pedestres</td>
+      <td>Via ou área de circulação exclusiva para pedestres — veículos proibidos</td>
+    </tr>
+    <tr>
+      <td>R-7b</td>
+      <td>Uso Exclusivo de Ciclistas</td>
+      <td>Ciclovia ou ciclofaixa — apenas bicicletas</td>
+    </tr>
+    <tr>
+      <td>R-7c</td>
+      <td>Compartilhado por Pedestres e Ciclistas</td>
+      <td>Ciclorrota compartilhada com pedestres — ciclistas devem ceder passagem aos pedestres</td>
+    </tr>
+    <tr>
+      <td>R-7d</td>
+      <td>Velocidade Máxima em Área de Pedestres</td>
+      <td>Limite reduzido (geralmente 20 ou 30 km/h) em zonas de convivência</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="didactic-box case-study">
+<h4>Estudo de Caso: Ciclista na Pista Proibida</h4>
+<p>Durante aula prática, um candidato avistou um ciclista trafegando em via sinalizada com R-3p (Proibido Circular com Bicicletas). O candidato, surpreso, perguntou ao instrutor: "Esse ciclista está infringindo a lei? O que faço?"</p>
+<p><strong>Análise para o instrutor:</strong></p>
+<ul>
+  <li>Sim, tecnicamente o ciclista comete infração ao trafegar em via onde a circulação de bicicletas é proibida pela sinalização.</li>
+  <li>No entanto, o dever do condutor motorizado é <em>adaptar sua conduta</em> para garantir a segurança do ciclista — que é um usuário vulnerável, independentemente de estar ou não em infração.</li>
+  <li>O CTB (Art. 29, §2º) determina que o condutor deve guardar distância segura dos ciclistas e pedestres, independentemente de quem tenha razão do ponto de vista normativo.</li>
+  <li>A pergunta certa não é "esse ciclista tem razão?" mas "como posso passar com segurança máxima?"</li>
+</ul>
+<p><strong>Lição pedagógica:</strong> Use casos como este para dissociar o "quem tem razão" do "o que devo fazer". No trânsito, a preservação da vida é hierarquicamente superior ao cumprimento da norma. Um candidato que atropela um ciclista infrator ainda comete infração e pode responder criminalmente.</p>
+</div>
+
+<h2>10. Erros Comuns na Interpretação das Placas de Regulamentação</h2>
+
+<h3>10.1 Mapeamento dos Erros Mais Frequentes</h3>
+
+<p>Com base em estudos sobre reprovação em exames teóricos e em relatos de instrutores experientes, destacamos os erros mais recorrentes na interpretação de placas de regulamentação:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Erro</th>
+      <th>Placa Envolvida</th>
+      <th>Estratégia Corretiva</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Confundir "dê a preferência" (R-2) com "pare" (R-1)</td>
+      <td>R-1 vs. R-2</td>
+      <td>Associar forma: octógono = parada absoluta; triângulo invertido = avaliação situacional</td>
+    </tr>
+    <tr>
+      <td>Crer que R-6b (proibido estacionar) proíbe também parar</td>
+      <td>R-6a vs. R-6b</td>
+      <td>Exercício de role-play: "você precisa desembarcar sua mãe idosa — qual placa permite isso?"</td>
+    </tr>
+    <tr>
+      <td>Não perceber legendas de horário/dia nas placas R-5 e R-6</td>
+      <td>R-19a, R-6c</td>
+      <td>Treinar leitura completa da placa (símbolo + legenda) como rotina</td>
+    </tr>
+    <tr>
+      <td>Confundir fundo azul (obrigação) com proibição</td>
+      <td>R-4c/d, R-20</td>
+      <td>Mnemônico: "azul = obrigação, como uniformes de serviço obrigatório"</td>
+    </tr>
+    <tr>
+      <td>Pensar que a proibição do R-3 termina após passar pela placa</td>
+      <td>R-3e, R-3f</td>
+      <td>Explicar que a proibição vigora até nova sinalização ou fim do trecho</td>
+    </tr>
+    <tr>
+      <td>Interpretar "velocidade mínima" (R-20) como velocidade máxima</td>
+      <td>R-20</td>
+      <td>Usar contexto: R-20 aparece em vias expressas e rodovias — trafegar devagar ali é o perigo</td>
+    </tr>
+    <tr>
+      <td>Ignorar que R-4a (sentido proibido) é para quem está indo na direção errada</td>
+      <td>R-4a</td>
+      <td>Simulação: "você viu essa placa de frente — o que ela está te dizendo?"</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>10.2 Estratégias Didáticas para Correção de Erros</h3>
+
+<p><strong>Técnica do "Porquê Triplo":</strong> Quando o candidato erra a interpretação de uma placa, não apenas corrija — pergunte: (1) O que você entendeu? (2) Por que entendeu assim? (3) O que nesta placa deveria ter te dado a resposta correta? Este processo metacognitivo acelera a aprendizagem e reduz a reincidência do erro.</p>
+
+<p><strong>Técnica de Agrupamento por Contexto:</strong> Em vez de ensinar as placas em ordem numérica (R-1, R-2, R-3...), apresente-as por contexto de uso: "placas que você verá em cruzamentos sem semáforo", "placas que afetam velocidade", "placas que afetam onde você pode parar". Contexto facilita a memorização e a aplicação prática.</p>
+
+<p><strong>Técnica do Erro Intencional:</strong> Em uma sequência de placas projetadas, inclua intencionalmente uma ou duas placas com erro sutil (cor errada, símbolo invertido). Peça ao candidato para identificar o erro. Isso ativa a atenção ao detalhe e desenvolve a criticidade visual necessária para identificar placas deterioradas ou vandalizadas na via real.</p>
+
+<div class="didactic-box exercise">
+<h4>Atividade de Fixação — Trilha de Sinalização</h4>
+<p><strong>Objetivo:</strong> Consolidar o conhecimento de todos os grupos R-1 a R-7 em contexto realista.</p>
+<p><strong>Material:</strong> Apresentação de slides com sequência de imagens fotográficas de vias reais contendo diferentes placas de regulamentação.</p>
+<p><strong>Procedimento:</strong></p>
+<ol>
+  <li>O instrutor projeta imagens de situações reais de via pública (sem setas ou marcações)</li>
+  <li>O candidato deve: (a) identificar todas as placas visíveis; (b) classificá-las pelo grupo (R-1 a R-7); (c) descrever a conduta correta do condutor naquele ponto</li>
+  <li>Para cada imagem, discutir coletivamente as dúvidas surgidas</li>
+  <li>Variação: usar o Google Street View em tempo real para explorar interseções da cidade</li>
+</ol>
+<p><strong>Critério de avaliação:</strong> O candidato deve atingir 80% de acerto na identificação e 100% de acerto na conduta correspondente (dado o impacto de segurança).</p>
+</div>
+
+<div class="didactic-box forum-topic">
+<h4>Tópico para Discussão</h4>
+<p><strong>"A sinalização viária brasileira é suficientemente clara? O que você, como futuro instrutor, pode fazer para compensar as deficiências do ambiente viário real?"</strong></p>
+<p>Reflita sobre os seguintes aspectos em sua discussão:</p>
+<ul>
+  <li>Placas com pictogramas pouco intuitivos para a cultura local</li>
+  <li>Falta de manutenção de placas existentes (desbotamento, obstrução, danos)</li>
+  <li>Inconsistências de sinalização entre municípios (mesma situação, soluções diferentes)</li>
+  <li>O papel do instrutor em preparar o candidato para um ambiente viário imperfeito, desenvolvendo julgamento autônomo em vez de dependência mecânica das placas</li>
+  <li>Propostas práticas: o que você faria diferente ao ensinar sinalização em comparação com o que provavelmente foi ensinado a você?</li>
+</ul>
+</div>
+
+<div class="didactic-box reflection">
+<h4>Questão para Reflexão</h4>
+<p>Imagine que você está conduzindo um candidato em aula prática e se depara com uma interseção onde há duas placas contraditórias: uma R-2 (Dê a Preferência) instalada corretamente e, a poucos metros, uma R-1 (Parada Obrigatória) que parece ter sido instalada por engano (não há linha de retenção, não há cruzamento justificável). Como você orientaria o candidato naquele momento? E o que você faria como profissional para resolver a situação a médio prazo?</p>
+<p><strong>Orientação de resposta:</strong> No momento: orientar o candidato a adotar a conduta mais restritiva (a parada obrigatória), pois é a que oferece maior margem de segurança. A médio prazo: documentar a inconsistência e comunicar ao órgão de trânsito competente. O instrutor de trânsito é também um agente de segurança viária ativo — não apenas ensina regras, mas contribui para a melhoria do ambiente viário.</p>
+</div>
+
+<div class="didactic-box video-link">
+<h4>Vídeo Sugerido</h4>
+<p><strong>Título sugerido:</strong> "Manual Brasileiro de Sinalização de Trânsito — Sinalização Vertical de Regulamentação (SENATRAN/DENATRAN)"</p>
+<p><strong>Finalidade:</strong> Complementar o conteúdo teórico com apresentação visual das placas em seus formatos oficiais, incluindo aplicações em campo.</p>
+<p><strong>Como usar em aula:</strong></p>
+<ul>
+  <li>Exibir o vídeo em segmentos, pausando para discussão a cada grupo de placas (R-1/R-2, depois R-3, depois R-4 etc.)</li>
+  <li>Ao final de cada segmento, promover perguntas-relâmpago sobre os grupos apresentados</li>
+  <li>Pedir que candidatos anotem dúvidas durante a exibição para discussão coletiva posterior</li>
+</ul>
+<p><strong>Alternativa:</strong> Buscar no canal oficial do SENATRAN no YouTube ou no portal do DNIT materiais audiovisuais sobre sinalização vertical. O DENATRAN publicou série de vídeos educativos sobre sinalização que pode ser utilizada em contexto de formação de instrutores.</p>
+</div>
+
+<div class="glossary">
+<h3>Glossário</h3>
+<dl>
+  <dt>Barra Diagonal</dt>
+  <dd>Elemento vermelho sobreposto ao símbolo de uma placa, indicando que a ação ou elemento representado é proibido naquele local.</dd>
+
+  <dt>CONTRAN</dt>
+  <dd>Conselho Nacional de Trânsito — órgão máximo normativo e consultivo do Sistema Nacional de Trânsito, responsável por editar as resoluções que regulamentam o CTB, incluindo as especificações do MBST.</dd>
+
+  <dt>CTB</dt>
+  <dd>Código de Trânsito Brasileiro — Lei nº 9.503, de 23 de setembro de 1997. Principal instrumento legal que rege a circulação viária no Brasil.</dd>
+
+  <dt>MBST</dt>
+  <dd>Manual Brasileiro de Sinalização de Trânsito — conjunto de volumes técnicos publicados pelo CONTRAN/SENATRAN que especificam todos os padrões de sinalização viária no Brasil, incluindo formas, cores, dimensões, materiais e critérios de implantação.</dd>
+
+  <dt>Película Retroreflexiva</dt>
+  <dd>Material aplicado sobre a face das placas viárias que devolve a luz incidente (dos faróis) de volta ao observador, garantindo visibilidade noturna. Classificada em tipos (I, III, IV, IX, XI) conforme nível de retroreflexão e durabilidade.</dd>
+
+  <dt>Placa de Regulamentação</dt>
+  <dd>Sinal vertical de trânsito com caráter imperativo, que impõe ao condutor uma conduta obrigatória (proibição, obrigação ou restrição). O descumprimento constitui infração de trânsito.</dd>
+
+  <dt>Retroreflexividade</dt>
+  <dd>Propriedade óptica de um material que reflete a luz incidente de volta ao observador, na mesma direção de onde ela veio, independentemente do ângulo de incidência. Essencial para a visibilidade noturna das placas.</dd>
+
+  <dt>Sinalização Vertical</dt>
+  <dd>Subsistema da sinalização viária que utiliza placas, painéis ou dispositivos instalados na posição vertical, junto à pista ou suspensos sobre ela, para regulamentar, advertir ou informar os usuários (CTB, Art. 87).</dd>
+
+  <dt>Sinistro de Trânsito</dt>
+  <dd>Terminologia atual (Resolução CONTRAN 1018/2025) para eventos anteriormente denominados "acidentes de trânsito". Evita a conotação de inevitabilidade implícita na palavra "acidente", enfatizando a prevenibilidade da maioria dos eventos.</dd>
+
+  <dt>Zona de Proteção</dt>
+  <dd>Área à frente de uma placa de regulamentação onde a sua determinação já é aplicável. Nos grupos R-5 (velocidade), a zona de proteção começa no ponto onde a placa é visível pelo condutor que chega.</dd>
+</dl>
+</div>
+
+<div class="bibliography">
+<h3>Referências e Bibliografia</h3>
+
+<h4>Legislação</h4>
+<ul>
+  <li>BRASIL. <strong>Lei nº 9.503, de 23 de setembro de 1997</strong>. Institui o Código de Trânsito Brasileiro. Diário Oficial da União, Brasília, 24 set. 1997.</li>
+  <li>BRASIL. CONTRAN. <strong>Resolução nº 1020, de 2025</strong>. Regulamenta os cursos de formação de instrutores de trânsito e atualiza os parâmetros para Centros de Formação de Condutores.</li>
+  <li>BRASIL. CONTRAN. <strong>Resolução nº 396, de 2011</strong> (e atualizações). Institui o Código de Estacionamento.</li>
+  <li>BRASIL. CONTRAN. <strong>Resolução nº 454, de 2013</strong>. Regulamenta o uso de ciclofaixas e ciclovias.</li>
+  <li>BRASIL. CONTRAN. <strong>Resolução nº 432, de 2013</strong>. Regulamenta a fiscalização do excesso de velocidade.</li>
+</ul>
+
+<h4>Bibliografia</h4>
+<ul>
+  <li>DENATRAN/SENATRAN. <strong>Manual Brasileiro de Sinalização de Trânsito — Volume I: Sinalização Vertical de Regulamentação</strong>. Brasília: DENATRAN, 2007 (revisões posteriores). Disponível no portal do DNIT.</li>
+  <li>DENATRAN/SENATRAN. <strong>Manual Brasileiro de Sinalização de Trânsito — Volume II: Sinalização Vertical de Advertência</strong>. Brasília: DENATRAN, 2007.</li>
+  <li>FERRAZ, A.C.P.; RAIA JR., A.A.; BEZERRA, B.S.; BASTOS, T. <strong>Segurança Viária</strong>. São Carlos: Suprema, 2012.</li>
+  <li>GOLD, P.A. <strong>Segurança de Trânsito: Aplicações de Engenharia para Reduzir Acidentes</strong>. Washington: BIRD/Banco Mundial, 1998.</li>
+  <li>VASCONCELLOS, E.A. <strong>Trânsito é Vida: Direitos e Deveres dos Cidadãos</strong>. São Paulo: Hucitec, 1998.</li>
+</ul>
+
+<h4>Sites Oficiais</h4>
+<ul>
+  <li>Portal do DENATRAN/SENATRAN: <strong>www.senatran.gov.br</strong> — Resoluções CONTRAN, MBST, estatísticas de sinistros</li>
+  <li>DNIT (Departamento Nacional de Infraestrutura de Transportes): <strong>www.dnit.gov.br</strong> — Normas técnicas de sinalização, manuais de projeto</li>
+  <li>DETRAN do seu estado — Portal estadual de trânsito com regulamentações específicas locais</li>
+  <li>IPEA — Instituto de Pesquisa Econômica Aplicada: <strong>www.ipea.gov.br</strong> — Relatórios de custos dos sinistros de trânsito no Brasil</li>
+  <li>Observatório Nacional de Segurança Viária: <strong>www.onsv.org.br</strong> — Dados epidemiológicos e estudos sobre comportamento do condutor</li>
+</ul>
+</div>
+
+<div class="closing">
+<p>Você acaba de percorrer um dos tópicos mais densos e mais importantes de toda a sua formação como instrutor. A sinalização viária de regulamentação não é um conjunto de normas burocráticas — é a materialização do direito constitucional ao trânsito seguro (CTB, Art. 1º, §2º). Cada placa que você ensinará a interpretar corretamente pode, concretamente, salvar uma vida. Quando seu candidato, meses ou anos após a habilitação, hesitar antes de um cruzamento e realizar a parada obrigatória adequada — protegendo uma criança que atravessava — ele estará aplicando o que você ensinou. Não subestime essa responsabilidade: você está na linha de frente da educação para a cidadania no trânsito. Vá adiante, com rigor técnico e paixão pedagógica.</p>
+</div>
+        </div>
+
+        <div class="topic-nav">
+            <a href="modulo-03-topico-09-documentacao-obrigatoria.html">&larr; Anterior</a>
+            <a href="modulo-03-topico-11-sinalizacao-viaria-parte2.html">Próximo &rarr;</a>
+        </div>
+
+        <div class="footer">
+            <a href="https://www.condutorlegalead.com.br">Instrutor de Trânsito EAD</a> — Curso de Reciclagem para Condutores — 45h/a — Resolução CONTRAN 1020/2025<br>
+            Material didático | ITT — Instituto Tecnológico de Transporte e Trânsito
+        </div>
+    </div>
+</body>
+</html>

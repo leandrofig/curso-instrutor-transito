@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Psicologia Aplicada — Fundamentos da Segurança e Comportamento no Trânsito | Instrutor de Trânsito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ===== Base Reset & Typography ===== */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #1a1a1a;
+            background: linear-gradient(180deg, rgba(246,241,215,0.92) 0%, rgba(235,225,170,0.85) 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .page-container {
+            max-width: 920px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.06);
+            overflow: hidden;
+        }
+
+        /* ===== Site Header with Logo ===== */
+        .site-header {
+            background: #f9f6eb;
+            padding: 18px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #DCBD32;
+        }
+        .site-header .logo img {
+            height: 42px;
+            width: auto;
+        }
+        .site-header .course-badge {
+            background: linear-gradient(135deg, #DCBD32, #c4a82a);
+            color: #1a1a1a;
+            padding: 5px 16px;
+            border-radius: 20px;
+            font-size: 0.78em;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== Breadcrumb ===== */
+        .breadcrumb {
+            padding: 12px 40px;
+            background: #f9f6eb;
+            border-bottom: 1px solid #e8e0c0;
+            font-size: 0.85em;
+            color: #6b5e3e;
+        }
+        .breadcrumb a {
+            color: #8b7a3e;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb .separator { margin: 0 8px; opacity: 0.5; }
+
+        /* ===== Progress Bar ===== */
+        .progress-container { padding: 14px 40px 10px; }
+        .progress-label { font-size: 0.8em; color: #8b7a3e; margin-bottom: 6px; font-weight: 500; }
+        .progress-bar { height: 6px; background: #e8e0c0; border-radius: 3px; overflow: hidden; }
+        .progress-bar .fill {
+            height: 100%;
+            border-radius: 3px;
+            background: linear-gradient(90deg, #DCBD32, #c4a82a);
+            transition: width 0.3s;
+        }
+
+        /* ===== Module Header ===== */
+        .module-header {
+            padding: 32px 40px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #3a3a3a 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .module-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #DCBD32, #e8d44d, #DCBD32);
+        }
+        .module-header .module-label {
+            font-size: 0.82em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #DCBD32;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .module-header h1 {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin: 0 0 4px;
+            color: white;
+        }
+        .module-header .topic-label {
+            font-size: 1em;
+            opacity: 0.88;
+            font-weight: 400;
+        }
+
+        /* ===== Content Body ===== */
+        .content-body { padding: 36px 40px; }
+        img { max-width: 100%; height: auto; }
+        a { color: #8b6914; text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; color: #6b5010; }
+        p { margin-bottom: 1em; text-align: justify; }
+        h2 {
+            color: #1a1a1a;
+            font-size: 1.45em;
+            margin: 2em 0 0.7em;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #DCBD32;
+            font-weight: 700;
+        }
+        h3 { color: #3a3a3a; font-size: 1.2em; margin: 1.4em 0 0.5em; font-weight: 600; }
+        h4 { color: #4a4a4a; font-size: 1.05em; margin: 1.1em 0 0.4em; font-weight: 600; }
+        ul, ol { margin: 0.5em 0 1em 1.5em; }
+        li { margin-bottom: 0.4em; }
+        blockquote {
+            border-left: 3px solid #DCBD32;
+            padding: 12px 20px;
+            margin: 1em 0;
+            color: #4a4a4a;
+            background: #fdf8e1;
+            border-radius: 0 6px 6px 0;
+        }
+        hr { border: none; border-top: 1px solid #e8e0c0; margin: 2em 0; }
+
+        /* ===== Objectives ===== */
+        .objectives {
+            background: #fdf8e1;
+            border-left: 5px solid #DCBD32;
+            padding: 22px 26px;
+            margin: 24px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        .objectives h3 { color: #6b5010; margin-top: 0; font-size: 1.1em; }
+        .objectives h3::before { content: "\1F3AF "; }
+        .objectives ul { margin-bottom: 0; }
+
+        /* ===== Didactic Component Boxes ===== */
+        .didactic-box {
+            padding: 22px 26px;
+            margin: 28px 0;
+            border-radius: 0 10px 10px 0;
+            position: relative;
+        }
+        .didactic-box h4 { margin-top: 0; font-size: 1.05em; }
+        .didactic-box p:last-child, .didactic-box ul:last-child, .didactic-box ol:last-child { margin-bottom: 0; }
+
+        /* Case Study */
+        .case-study {
+            background: #e6fffa;
+            border-left: 5px solid #319795;
+        }
+        .case-study h4 { color: #234e52; }
+        .case-study h4::before { content: "\1F4CB "; }
+
+        /* Reflection */
+        .reflection {
+            background: #fffbeb;
+            border-left: 5px solid #F59E0B;
+        }
+        .reflection h4 { color: #78350f; }
+        .reflection h4::before { content: "\1F914 "; }
+
+        /* Exercise */
+        .exercise {
+            background: #f0fdf4;
+            border-left: 5px solid #22C55E;
+        }
+        .exercise h4 { color: #14532d; }
+        .exercise h4::before { content: "\270F\FE0F "; }
+
+        /* Forum Topic */
+        .forum-topic {
+            background: #faf5ff;
+            border-left: 5px solid #8B5CF6;
+        }
+        .forum-topic h4 { color: #3b0764; }
+        .forum-topic h4::before { content: "\1F4AC "; }
+
+        /* Legal Reference */
+        .legal-reference {
+            background: #f7fafc;
+            border: 1px solid #cbd5e1;
+            border-left: 5px solid #4a5568;
+            border-radius: 0 10px 10px 0;
+        }
+        .legal-reference h4 { color: #1a202c; }
+        .legal-reference h4::before { content: "\2696\FE0F "; }
+        .legal-reference blockquote { font-style: italic; background: #edf2f7; border-left-color: #4a5568; }
+
+        /* Video Link */
+        .video-link {
+            background: #fef2f2;
+            border-left: 5px solid #EF4444;
+        }
+        .video-link h4 { color: #7f1d1d; }
+        .video-link h4::before { content: "\1F3AC "; }
+        .video-link a { color: #dc2626; font-weight: 600; }
+
+        /* Warning */
+        .warning {
+            background: #fef2f2;
+            border-left: 5px solid #dc2626;
+            padding: 16px 22px;
+            margin: 22px 0;
+            border-radius: 0 8px 8px 0;
+            font-weight: 500;
+        }
+        .warning::before { content: "\26A0\FE0F "; font-size: 1.1em; }
+
+        /* Important */
+        .important {
+            background: #fffbeb;
+            border-left: 5px solid #F59E0B;
+            padding: 16px 22px;
+            margin: 22px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .important::before { content: "\2757 "; font-size: 1.1em; }
+
+        /* Tip */
+        .tip {
+            background: #ecfdf5;
+            border-left: 5px solid #10b981;
+            padding: 16px 22px;
+            margin: 22px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .tip::before { content: "\1F4A1 "; font-size: 1.1em; }
+
+        /* ===== Glossary ===== */
+        .glossary {
+            background: #fdf8e1;
+            border: 1px solid #e8d44d;
+            padding: 26px;
+            margin: 32px 0;
+            border-radius: 12px;
+        }
+        .glossary h3 { color: #6b5010; margin-top: 0; border-bottom: 2px solid #DCBD32; padding-bottom: 8px; }
+        .glossary h3::before { content: "\1F4D6 "; }
+        .glossary dl { margin: 0; }
+        .glossary dt { font-weight: 700; color: #6b5010; margin-top: 14px; }
+        .glossary dd { margin-left: 20px; margin-bottom: 6px; color: #4a4a4a; }
+
+        /* ===== Bibliography ===== */
+        .bibliography {
+            background: #faf9f2;
+            border-top: 4px solid #DCBD32;
+            padding: 26px;
+            margin-top: 40px;
+            border-radius: 0 0 12px 12px;
+        }
+        .bibliography h3 { color: #4a4a4a; margin-top: 0; }
+        .bibliography h3::before { content: "\1F4DA "; }
+        .bibliography h4 { color: #6b5e3e; margin-top: 16px; font-size: 1em; }
+        .bibliography ul { list-style-type: disc; }
+        .bibliography li { margin-bottom: 6px; font-size: 0.93em; }
+
+        /* ===== Diagrams / Figures ===== */
+        .diagram { text-align: center; margin: 28px 0; }
+        .diagram img {
+            max-width: 100%;
+            border: 1px solid #e8e0c0;
+            border-radius: 10px;
+            padding: 12px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .diagram figcaption {
+            font-size: 0.88em;
+            color: #6b5e3e;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* ===== Tables ===== */
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.93em; }
+        thead th {
+            background: #1a1a1a;
+            color: #DCBD32;
+            padding: 12px 14px;
+            text-align: left;
+            font-weight: 600;
+        }
+        tbody td { padding: 10px 14px; border-bottom: 1px solid #e8e0c0; }
+        tbody tr:nth-child(even) { background: #faf9f2; }
+        tbody tr:hover { background: #f5f0d0; }
+
+        /* ===== Closing Message ===== */
+        .closing {
+            text-align: center;
+            padding: 28px;
+            margin-top: 32px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            color: #DCBD32;
+        }
+        .closing p { text-align: center; margin: 0; color: #e8e0c0; }
+        .closing .emoji { font-size: 1.5em; display: block; margin-bottom: 10px; }
+
+        /* ===== Topic Navigation ===== */
+        .topic-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-top: 1px solid #e8e0c0;
+            background: #faf9f2;
+        }
+        .topic-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #6b5010;
+            padding: 10px 20px;
+            border: 2px solid #DCBD32;
+            border-radius: 8px;
+            font-size: 0.9em;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .topic-nav a:hover {
+            background: #DCBD32;
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .topic-nav .placeholder { visibility: hidden; padding: 10px 20px; }
+
+        /* ===== Footer ===== */
+        .footer {
+            text-align: center;
+            padding: 18px 40px;
+            background: #1a1a1a;
+            font-size: 0.8em;
+            color: #8b7a3e;
+            border-radius: 0 0 16px 16px;
+        }
+        .footer a { color: #DCBD32; }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            body { padding: 8px; }
+            .content-body { padding: 20px; }
+            .site-header { padding: 14px 20px; }
+            .site-header .logo img { height: 32px; }
+            .breadcrumb { padding: 10px 20px; }
+            .module-header { padding: 24px 20px; }
+            .module-header h1 { font-size: 1.25em; }
+            .progress-container { padding: 10px 20px 8px; }
+            .topic-nav { padding: 15px 20px; flex-direction: column; gap: 10px; }
+            .topic-nav a { width: 100%; justify-content: center; }
+            .topic-nav .placeholder { display: none; }
+            table { font-size: 0.85em; }
+            thead th, tbody td { padding: 8px 10px; }
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .page-container { box-shadow: none; }
+            .topic-nav, .progress-container, .footer, .site-header { display: none; }
+            .module-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .didactic-box { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="site-header">
+            <div class="logo">
+                <img src="data:image/png;base64,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" alt="Instrutor de Trânsito">
+            </div>
+            <span class="course-badge">CURSO 45h/a</span>
+        </div>
+
+        <div class="breadcrumb">
+            <a href="index.html">Curso de Reciclagem</a>
+            <span class="separator">&rsaquo;</span>
+            <a href="index.html">Módulo 03</a>
+            <span class="separator">&rsaquo;</span>
+            Tópico 17: Psicologia Aplicada
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-label">Módulo 03 — Tópico 17 de 17</div>
+            <div class="progress-bar">
+                <div class="fill" style="width: 100%"></div>
+            </div>
+        </div>
+
+        <div class="module-header">
+            <div class="module-label">Módulo 03 — Fundamentos da Segurança e Comportamento no Trânsito</div>
+            <h1>Tópico 17: Psicologia Aplicada</h1>
+            <div class="topic-label">Curso de Reciclagem para Condutores — 45 horas/aula | Resolução CONTRAN 1020/2025</div>
+        </div>
+
+        <div class="content-body">
+            <div class="objectives">
+<h3>Objetivos de Aprendizagem</h3>
+<ul>
+<li>Compreender os principais fatores psicológicos e emocionais que influenciam o comportamento humano no trânsito</li>
+<li>Identificar estados emocionais de risco — agressividade, estresse, fadiga, sono — e seus impactos na condução segura</li>
+<li>Reconhecer os efeitos fisiológicos e psicológicos do álcool, drogas e medicamentos sobre a capacidade de condução</li>
+<li>Desenvolver competências para transmitir valores de paz, responsabilidade e cidadania no trânsito aos futuros condutores</li>
+<li>Aplicar conhecimentos de psicologia do trânsito na prática pedagógica do Curso de Formação de Condutores (CFC)</li>
+</ul>
+</div>
+
+<h2>Introdução</h2>
+
+<p>O trânsito é, antes de tudo, um fenômeno humano. Embora envolva veículos, vias e sinalizações, sua dinâmica é determinada essencialmente pelo comportamento das pessoas. Dados do Observatório Nacional de Segurança Viária (ONSV) indicam que fatores humanos respondem por mais de 90% das causas de sinistros de trânsito no Brasil — entre eles, comportamentos impulsivos, desatenção, uso de substâncias psicoativas e estados emocionais alterados. Compreender a psicologia do trânsito não é, portanto, um complemento teórico ao curso de formação de condutores: é o seu núcleo estruturante.</p>
+
+<p>Como instrutor de trânsito, você ocupa uma posição privilegiada e de enorme responsabilidade. Não se trata apenas de ensinar a operar mecanismos e obedecer sinais; trata-se de moldar atitudes, crenças e valores que o candidato levará para toda a sua vida como condutor. A sala de aula teórica e o veículo de instrução são ambientes de transformação comportamental. Para exercer essa função com excelência, o instrutor precisa conhecer como a mente humana funciona no contexto do trânsito — suas vulnerabilidades, seus vieses cognitivos e seus gatilhos emocionais.</p>
+
+<p>Este tópico apresenta os fundamentos da Psicologia Aplicada ao Trânsito com foco na atuação prática do instrutor. Você compreenderá como emoções como raiva, medo e impaciência afetam a tomada de decisão ao volante; como estados físicos como fadiga e sono comprometem reflexos e julgamento; e como o álcool e as drogas alteram profundamente a cognição e a percepção do risco. Ao final, você estará apto a utilizar esses conhecimentos não apenas para identificar comportamentos de risco em seus alunos, mas para construir, junto com eles, uma nova cultura de segurança e paz no trânsito.</p>
+
+<h2>1. Psicologia do Trânsito: Comportamento Humano no Trânsito</h2>
+
+<p>A Psicologia do Trânsito é a área da psicologia aplicada que estuda o comportamento humano nas situações de deslocamento, especialmente em vias públicas. Seu objeto de estudo inclui processos perceptivos, cognitivos e emocionais que determinam como os indivíduos agem como condutores, passageiros e pedestres.</p>
+
+<h3>1.1 O Trânsito como Sistema Sociotécnico</h3>
+
+<p>O trânsito pode ser compreendido como um sistema sociotécnico complexo: a interação entre seres humanos (com suas emoções, cansaço, valores e habilidades), veículos (com suas características mecânicas e tecnológicas) e vias (com seu design, sinalização e condições). Quando qualquer um desses elementos falha ou entra em conflito com outro, o risco de sinistro aumenta exponencialmente.</p>
+
+<p>O modelo clássico da Psicologia do Trânsito divide os fatores humanos em três dimensões:</p>
+
+<table>
+<thead>
+<tr>
+<th>Dimensão</th>
+<th>Componentes</th>
+<th>Exemplos de Falhas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Perceptiva</strong></td>
+<td>Visão, audição, percepção de velocidade e distância</td>
+<td>Não perceber ciclista em ponto cego; subestimar velocidade do veículo à frente</td>
+</tr>
+<tr>
+<td><strong>Cognitiva</strong></td>
+<td>Atenção, memória, raciocínio, tomada de decisão</td>
+<td>Distração por celular; erro de julgamento em cruzamento; esquecimento de regra de preferência</td>
+</tr>
+<tr>
+<td><strong>Emocional/Motivacional</strong></td>
+<td>Estados de humor, atitudes, valores, impulsos</td>
+<td>Avançar sinal por impaciência; acelerar por competição; dirigir alcoolizado por subestimar o risco</td>
+</tr>
+</tbody>
+</table>
+
+<h3>1.2 Percepção de Risco e Vieses Cognitivos</h3>
+
+<p>Um dos fenômenos mais estudados na Psicologia do Trânsito é a <strong>distorção na percepção de risco</strong>. Em geral, as pessoas subestimam o risco das situações familiares e superestimam o risco de situações novas e raras. Isso explica por que condutores experientes frequentemente se tornam mais perigosos que iniciantes em determinados aspectos: a familiaridade gera uma falsa sensação de controle.</p>
+
+<p>Entre os vieses cognitivos mais relevantes para o trânsito, destacam-se:</p>
+
+<ul>
+<li><strong>Excesso de confiança (overconfidence):</strong> O condutor acredita que é melhor que a média, o que o leva a aceitar riscos desnecessários. Estudos mostram que 80% dos condutores acreditam conduzir melhor que 50% dos demais — uma impossibilidade estatística.</li>
+<li><strong>Viés de otimismo:</strong> "Isso nunca vai acontecer comigo." Essa crença reduz comportamentos preventivos e o uso de equipamentos de segurança.</li>
+<li><strong>Heurística da disponibilidade:</strong> O condutor estima a probabilidade de um evento com base em quão facilmente consegue lembrar de casos semelhantes. Quem nunca presenciou um sinistro tende a subestimar sua probabilidade.</li>
+<li><strong>Efeito manada:</strong> Tendência a adotar o comportamento da maioria — se todos estão avançando o sinal fechando, o condutor sente-se "coberto" para fazer o mesmo.</li>
+</ul>
+
+<div class="didactic-box reflection">
+<h4>Questão para Reflexão</h4>
+<p>Pense em uma situação de trânsito em que você mesmo já subestimou um risco por familiaridade ou excesso de confiança. Como esse episódio poderia ter sido evitado? Como um instrutor de trânsito pode trabalhar com os alunos para desconstruir o viés de excesso de confiança, especialmente em candidatos que já têm experiência informal ao volante?</p>
+</div>
+
+<h2>2. Agressividade, Impaciência e Estresse no Trânsito</h2>
+
+<h3>2.1 O Fenômeno da Agressividade no Trânsito</h3>
+
+<p>A agressividade no trânsito é um fenômeno multideterminado que envolve fatores individuais (traços de personalidade, histórico de vida, estado emocional momentâneo) e situacionais (congestionamento, calor, pressa, provocações de outros condutores). O psicólogo James Averill identifica a raiva como uma emoção secundária: ela geralmente surge sobre uma base de frustração ou ameaça percebida.</p>
+
+<p>No contexto do trânsito, a raiva se manifesta em um espectro que vai de comportamentos sutis até episódios de violência aberta:</p>
+
+<table>
+<thead>
+<tr>
+<th>Nível</th>
+<th>Manifestação</th>
+<th>Exemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leve</td>
+<td>Irritação interna, pensamentos negativos</td>
+<td>Murmurar xingamentos sem agir</td>
+</tr>
+<tr>
+<td>Moderado</td>
+<td>Comportamento assertivo-agressivo</td>
+<td>Buzinar excessivamente, gestos de desaprovação</td>
+</tr>
+<tr>
+<td>Alto</td>
+<td>Comportamento de risco intencional</td>
+<td>Fechar outro veículo, assédio na direção (tailgating), não dar passagem deliberadamente</td>
+</tr>
+<tr>
+<td>Extremo — <em>Road Rage</em></td>
+<td>Violência física ou ameaça direta</td>
+<td>Descer do veículo para confronto, ameaças com objeto ou arma</td>
+</tr>
+</tbody>
+</table>
+
+<h3>2.2 Fatores que Amplificam a Agressividade</h3>
+
+<p>Determinados fatores ambientais e situacionais funcionam como "amplificadores" da agressividade:</p>
+
+<ul>
+<li><strong>Anonimato:</strong> Dentro do veículo, o condutor sente-se protegido e menos sujeito às normas sociais de convivência. A casca de aço do automóvel cria uma zona de desinibição comportamental.</li>
+<li><strong>Congestionamento:</strong> A percepção de território ameaçado e a frustração da meta (chegar ao destino) elevam os níveis de cortisol e adrenalina.</li>
+<li><strong>Calor:</strong> Estudos de psicologia ambiental demonstram correlação entre temperatura elevada e comportamentos agressivos. O calor aumenta a irritabilidade e reduz a tolerância à frustração.</li>
+<li><strong>Pressa crônica:</strong> O estado de urgência permanente cria um perfil de condução agressiva e oportunista, com riscos constantes de manobras inseguras.</li>
+<li><strong>Música de alto volume:</strong> Estimula a aceleração do coração e pode aumentar o estado de excitação (arousal), predispondo comportamentos impulsivos.</li>
+</ul>
+
+<div class="didactic-box case-study">
+<h4>Estudo de Caso: O Motorista da Manhã</h4>
+<p><strong>Contexto:</strong> Carlos, 38 anos, engenheiro, acorda às 6h30 para chegar ao trabalho às 8h. Não dorme bem há dias por pressão de um projeto. No caminho, enfrenta um congestionamento inesperado. Um motorista à sua frente fecha o espaço quando ele tenta mudar de faixa. Carlos para o carro, desce, bate na janela do outro veículo e ameaça o condutor. Há câmeras na via. O episódio é filmado por outro motorista e vai para as redes sociais.</p>
+<p><strong>Análise:</strong> Identifique na narrativa acima: (a) os fatores acumulativos de estresse que precederam o incidente; (b) os vieses cognitivos presentes; (c) as consequências legais possíveis (art. 163 do CTB — obstrução de via pública; possível enquadramento em crime de trânsito pelo art. 306 ou ameaça pelo Código Penal).</p>
+<p><strong>Para o instrutor:</strong> Como você utilizaria esse caso em sala de aula para discutir autorregulação emocional com candidatos a condutor? Qual abordagem pedagógica seria mais eficaz: leitura do caso, encenação, vídeo, ou debate?</p>
+</div>
+
+<h3>2.3 Estresse e Síndrome do Condutor Estressado</h3>
+
+<p>O estresse crônico é um dos fatores mais subestimados na geração de sinistros. Diferentemente da raiva episódica, o estresse crônico compromete de forma contínua as funções cognitivas superiores — atenção sustentada, flexibilidade cognitiva, memória de trabalho — que são exatamente as capacidades necessárias para uma condução segura.</p>
+
+<p>Sintomas do estresse que afetam a condução:</p>
+<ul>
+<li>Redução do campo de atenção (visão em túnel cognitivo)</li>
+<li>Maior propensão a decisões impulsivas</li>
+<li>Tempo de reação aumentado</li>
+<li>Dificuldade de antecipação de situações de risco</li>
+<li>Maior irritabilidade e menor tolerância a comportamentos dos demais usuários da via</li>
+</ul>
+
+<div class="didactic-box reflection">
+<h4>Questão para Reflexão</h4>
+<p>Como instrutor, você pode observar sinais de estresse em seus alunos durante as aulas práticas de direção? Quais seriam esses sinais (tensão muscular, respiração acelerada, hesitação excessiva, reações desproporcionais a erros)? Como você deve reagir pedagogicamente ao identificar um aluno sob estresse intenso durante uma aula prática no veículo?</p>
+</div>
+
+<h2>3. Fatores Emocionais e Cognitivos que Afetam a Condução</h2>
+
+<h3>3.1 Emoções e Tomada de Decisão</h3>
+
+<p>As neurociências contemporâneas, especialmente a partir do trabalho do neurocientista António Damásio, demonstraram que emoções e razão não são opostos: as emoções são fundamentais para a tomada de decisão eficiente. O que ocorre no trânsito, no entanto, é frequentemente o fenômeno inverso: emoções intensas e negativas sequestram a capacidade racional, gerando decisões impulsivas e perigosas.</p>
+
+<p>O conceito de <strong>"sequestro amigdaliano"</strong>, popularizado por Daniel Goleman na obra <em>Inteligência Emocional</em>, descreve o processo pelo qual a amígdala cerebral (centro emocional do cérebro) assume o controle da resposta comportamental antes que o córtex pré-frontal (sede do raciocínio lógico) possa avaliar a situação. No trânsito, isso se manifesta como reações impulsivas: frear bruscamente, fazer uma manobra de risco em resposta a uma provocação, acelerar em um semáforo que acabou de fechar.</p>
+
+<h3>3.2 Atenção, Distração e Multitarefa</h3>
+
+<p>A atenção humana é um recurso limitado e seletivo. No trânsito, a condução segura requer um nível elevado de atenção distribuída — a capacidade de monitorar múltiplos estímulos simultaneamente. Qualquer tarefa secundária que consuma recursos atencionais aumenta o risco de sinistro.</p>
+
+<p>A <strong>distração ao volante</strong> tornou-se uma das principais causas de sinistros no Brasil e no mundo. O uso do celular ao volante merece atenção especial:</p>
+
+<div class="didactic-box legal-reference">
+<h4>Referência Legal</h4>
+<p><strong>CTB, Art. 252, inciso VIII</strong> (com redação dada pela Lei nº 14.071/2020): É proibido ao condutor conduzir veículo utilizando qualquer equipamento de comunicação portátil, inclusive telefone celular, exceto quando este estiver integrado ao veículo e viva-voz. A infração é classificada como <strong>gravíssima</strong>, com multiplicador de 3, resultando em 7 pontos na CNH e multa de R$ 293,47. Em caso de reincidência no período de 12 meses, a penalidade dobra para 14 pontos e R$ 586,94.</p>
+<p><strong>CTB, Art. 306</strong>: Conduzir veículo com capacidade psicomotora alterada em razão da influência de álcool ou de outra substância psicoativa que determine dependência — pena de detenção, de 6 meses a 3 anos, multa e suspensão ou proibição de se obter a permissão ou a habilitação para dirigir veículo automotor.</p>
+<p><strong>CTB, Art. 1º, §§ 2º e 5º</strong>: O trânsito em condições seguras é um direito de todos. Os órgãos e entidades de trânsito darão prioridade em suas ações à defesa da vida, nela incluída a preservação da saúde e do meio ambiente.</p>
+</div>
+
+<p>Estudos de simulação em laboratório demonstram que dirigir falando ao celular — mesmo com viva-voz — é tão perigoso quanto dirigir com 0,8 g/L de álcool no sangue (limite legal anterior ao vigente). Isso ocorre porque o viva-voz não elimina a distração cognitiva: a mente está processando a conversa, não a via.</p>
+
+<h3>3.3 Personalidade e Estilo de Condução</h3>
+
+<p>A psicologia da personalidade identifica alguns perfis que apresentam maior risco no trânsito:</p>
+
+<ul>
+<li><strong>Alta impulsividade:</strong> Dificuldade em inibir respostas automáticas, tendência a aceitar riscos sem avaliação prévia</li>
+<li><strong>Busca por sensações (sensation seeking):</strong> Necessidade de estímulos intensos, o que pode se manifestar em velocidade excessiva e manobras arriscadas</li>
+<li><strong>Baixa empatia:</strong> Dificuldade em considerar o impacto de suas ações sobre outros usuários da via</li>
+<li><strong>Locus de controle externo:</strong> Crença de que os sinistros são resultado de "azar" ou "destino", não de comportamentos específicos — o que reduz a motivação para adotar comportamentos seguros</li>
+</ul>
+
+<div class="tip">
+<p><strong>Dica Pedagógica:</strong> Ao trabalhar perfis de personalidade em sala de aula, o instrutor deve evitar a estigmatização. O objetivo não é rotular o aluno, mas levá-lo a uma reflexão autônoma sobre seus próprios padrões comportamentais. Estratégias de autoavaliação (questionários reflexivos, diários de condução, simulações de cenário) são mais eficazes que aulas expositivas para esse tema.</p>
+</div>
+
+<h2>4. Estado Físico e Mental do Condutor: Fadiga, Sono e Doença</h2>
+
+<h3>4.1 Fadiga ao Volante</h3>
+
+<p>A fadiga é definida como um estado de diminuição funcional resultante de esforço físico ou mental prolongado. No contexto da condução, a fadiga compromete:</p>
+
+<ul>
+<li>Tempo de reação (pode aumentar em até 50% com fadiga moderada)</li>
+<li>Capacidade de manter a atenção sustentada</li>
+<li>Precisão nos movimentos de direção (zigzag, saída de faixa involuntária)</li>
+<li>Capacidade de antecipação de riscos</li>
+<li>Julgamento e tomada de decisão</li>
+</ul>
+
+<p>Um aspecto crítico da fadiga é que, diferentemente do álcool, ela não gera (inicialmente) uma percepção subjetiva de comprometimento proporcional ao comprometimento real. O condutor fatigado frequentemente acredita estar "em condições de continuar" quando, na realidade, sua capacidade de condução já está gravemente deteriorada.</p>
+
+<h3>4.2 Privação de Sono e Microsono</h3>
+
+<p>A privação de sono é um dos fatores mais subestimados de risco no trânsito. Dormir menos de 6 horas por noite por vários dias consecutivos tem efeitos equivalentes à privação total de sono de uma noite inteira. Esses efeitos incluem:</p>
+
+<ul>
+<li>Déficit severo na atenção sustentada</li>
+<li>Comprometimento da memória de trabalho</li>
+<li>Redução da velocidade de processamento de informações</li>
+<li>Instabilidade emocional e maior irritabilidade</li>
+<li>Dificuldade de manter o veículo na faixa de rodagem</li>
+</ul>
+
+<p>O fenômeno do <strong>microsono</strong> é particularmente perigoso: são episódios involuntários de sono com duração de 2 a 10 segundos que ocorrem sem que o condutor perceba. A 100 km/h, 5 segundos de microsono correspondem a percorrer cerca de 140 metros com os olhos fechados — o equivalente a um avião pousando às cegas.</p>
+
+<div class="warning">
+<p><strong>Atenção:</strong> Não existe adaptação funcional à privação crônica de sono. Condutores que "se acostumaram a dormir pouco" não estão protegidos; ao contrário, frequentemente perdem a capacidade de perceber seu próprio nível de comprometimento, o que é ainda mais perigoso.</p>
+</div>
+
+<h3>4.3 Doenças e Condições Médicas que Afetam a Condução</h3>
+
+<p>Diversas condições médicas afetam a aptidão para conduzir e devem ser declaradas ao médico examinador no processo de habilitação. Entre as mais relevantes:</p>
+
+<table>
+<thead>
+<tr>
+<th>Condição</th>
+<th>Impacto na Condução</th>
+<th>Observação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Epilepsia</td>
+<td>Risco de crise súbita com perda de consciência</td>
+<td>Pode impedir a habilitação em algumas categorias; avaliação médica obrigatória</td>
+</tr>
+<tr>
+<td>Diabetes mellitus</td>
+<td>Hipoglicemia pode causar confusão mental, desmaio</td>
+<td>Monitoramento glicêmico antes de dirigir; risco aumentado em viagens longas</td>
+</tr>
+<tr>
+<td>Apneia do sono</td>
+<td>Sonolência diurna excessiva, microsono frequente</td>
+<td>Subdiagnosticada; comum em motoristas profissionais</td>
+</tr>
+<tr>
+<td>Doenças cardiovasculares</td>
+<td>Risco de infarto ou arritmia súbita ao volante</td>
+<td>Avaliação cardiológica periódica para condutores profissionais</td>
+</tr>
+<tr>
+<td>Problemas de visão</td>
+<td>Redução do campo visual, dificuldade noturna</td>
+<td>Exame de acuidade visual obrigatório no processo de habilitação</td>
+</tr>
+<tr>
+<td>Transtornos de ansiedade/pânico</td>
+<td>Ataques de pânico, comportamento de evitação ou de risco</td>
+<td>Necessita de acompanhamento psicológico; medicamentos podem ter efeitos sedativos</td>
+</tr>
+</tbody>
+</table>
+
+<div class="important">
+<p><strong>Importante para o Instrutor:</strong> O CTB, em seu art. 147, § 1º, estabelece que o candidato deve ser considerado apto física e mentalmente para conduzir veículo automotor. O instrutor não tem função de diagnóstico médico, mas deve orientar o aluno sobre a importância da honestidade no exame de saúde e sobre a responsabilidade de não conduzir em condições comprometidas. Se o instrutor identificar sinais preocupantes durante as aulas práticas (crises, confusão, perda de coordenação), deve interromper imediatamente a aula e comunicar ao responsável pelo CFC.</p>
+</div>
+
+<div class="didactic-box exercise">
+<h4>Atividade de Fixação</h4>
+<p><strong>Questionário de Autoavaliação de Aptidão para Conduzir</strong></p>
+<p>Elabore, individualmente, um <em>checklist</em> com 10 perguntas que um condutor responsável deveria se fazer antes de iniciar uma viagem de mais de 2 horas. Inclua perguntas sobre: horas de sono nas últimas 24h, estado emocional, última refeição, medicamentos em uso, condições físicas gerais. Depois, compartilhe com um colega e discutam: como você utilizaria esse checklist como ferramenta pedagógica em aulas teóricas no CFC?</p>
+</div>
+
+<h2>5. Abuso de Álcool e Drogas: Efeitos Fisiológicos e Psicológicos</h2>
+
+<h3>5.1 Álcool: O Depressor do Sistema Nervoso Central</h3>
+
+<p>O etanol (álcool etílico) é uma substância psicoativa depressora do sistema nervoso central (SNC). Ao contrário da crença popular, o álcool <strong>não estimula</strong> — ele inibe progressivamente as funções cerebrais, começando pelas mais evoluídas (julgamento, autocrítica, inibição comportamental) e avançando para as mais básicas (coordenação motora, fala, consciência).</p>
+
+<p>Os efeitos do álcool na condução se manifestam muito antes dos sinais visíveis de embriaguez:</p>
+
+<table>
+<thead>
+<tr>
+<th>Nível de Alcoolemia</th>
+<th>Efeitos Fisiológicos e Psicológicos</th>
+<th>Impacto na Condução</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0,1 a 0,2 g/L</td>
+<td>Relaxamento leve, redução da autocrítica</td>
+<td>Sutil aumento na confiança, pequena redução da atenção dividida</td>
+</tr>
+<tr>
+<td>0,2 a 0,5 g/L</td>
+<td>Euforia, desinibição, comprometimento do julgamento</td>
+<td>Subestimação de riscos, redução do tempo de reação em 10-20%</td>
+</tr>
+<tr>
+<td>0,5 a 1,0 g/L</td>
+<td>Coordenação motora prejudicada, visão turva, dificuldade de concentração</td>
+<td>Dificuldade de manter faixa, reação a emergências gravemente comprometida</td>
+</tr>
+<tr>
+<td>1,0 a 2,0 g/L</td>
+<td>Confusão mental, descontrole emocional, ataxia significativa</td>
+<td>Incapacidade de condução segura</td>
+</tr>
+<tr>
+<td>Acima de 2,0 g/L</td>
+<td>Risco de coma alcoólico</td>
+<td>Incapacidade total; risco de vida</td>
+</tr>
+</tbody>
+</table>
+
+<p>A <strong>tolerância ao álcool</strong> — desenvolvida por consumidores crônicos — é um fenômeno especialmente perigoso no trânsito: o indivíduo não apresenta os sinais externos de embriaguez, mas seus reflexos e capacidade cognitiva estão igualmente comprometidos. Um alcoolista crônico com 1,0 g/L pode aparentar sobriedade enquanto apresenta comprometimento grave das funções motoras finas e cognitivas.</p>
+
+<h3>5.2 A Lei Seca Brasileira</h3>
+
+<p>O Brasil adota o princípio da <strong>tolerância zero</strong> para o álcool ao volante, estabelecido pela Lei nº 12.760/2012 (Lei Seca) e sua atualização pela Lei nº 13.281/2016:</p>
+
+<ul>
+<li><strong>Infração administrativa:</strong> Qualquer concentração de álcool detectável pelo etilômetro (acima de 0,05 mg/L no ar expirado) ou pelo exame de sangue (acima de 0,03 g/L). Penalidade: multa de R$ 2.934,70, retenção do veículo, recolhimento da habilitação e suspensão do direito de dirigir por 12 meses.</li>
+<li><strong>Crime de trânsito (art. 306 CTB):</strong> Concentração igual ou superior a 0,3 mg/L no ar expirado ou 0,6 g/L no sangue, OU qualquer concentração com alteração da capacidade psicomotora comprovada. Pena: detenção de 6 meses a 3 anos.</li>
+</ul>
+
+<h3>5.3 Drogas Ilícitas e Medicamentos: Efeitos sobre a Condução</h3>
+
+<p>O uso de substâncias psicoativas vai muito além do álcool. Diversas drogas ilícitas e medicamentos prescritos afetam significativamente a capacidade de condução:</p>
+
+<table>
+<thead>
+<tr>
+<th>Substância</th>
+<th>Efeito Principal</th>
+<th>Impacto na Condução</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cannabis (maconha)</td>
+<td>Depressora/alucinógena</td>
+<td>Redução de reflexos, distorção de tempo e distância, comprometimento da atenção dividida por até 3 horas</td>
+</tr>
+<tr>
+<td>Cocaína / Crack</td>
+<td>Estimulante</td>
+<td>Falsa sensação de capacidade, comportamento agressivo e de risco; crashdown com fadiga extrema</td>
+</tr>
+<tr>
+<td>Anfetaminas</td>
+<td>Estimulante</td>
+<td>Hipervigilância com erro de julgamento, insônia acumulada; uso como "solução" para longas viagens — altamente perigoso</td>
+</tr>
+<tr>
+<td>Benzodiazepínicos (ex: Diazepam)</td>
+<td>Depressor do SNC</td>
+<td>Sonolência, lentidão de reflexos; perigo amplificado com álcool</td>
+</tr>
+<tr>
+<td>Anti-histamínicos (ex: prometazina)</td>
+<td>Depressor do SNC</td>
+<td>Sonolência pronunciada; venda livre nas farmácias aumenta o risco de uso desavisado</td>
+</tr>
+<tr>
+<td>Opioides (incluindo tramadol)</td>
+<td>Depressor do SNC</td>
+<td>Sedação, comprometimento cognitivo, redução do tempo de reação</td>
+</tr>
+</tbody>
+</table>
+
+<div class="important">
+<p><strong>Atenção para o Instrutor:</strong> O uso de medicamentos prescritos NÃO isenta o condutor das penalidades se estiver com a capacidade psicomotora alterada. O condutor deve consultar o médico prescritor e o farmacêutico sobre os efeitos do medicamento na direção. Bulas de medicamentos com advertência sobre condução devem ser observadas rigorosamente.</p>
+</div>
+
+<div class="didactic-box case-study">
+<h4>Estudo de Caso: O Caminhoneiro e os "Rebites"</h4>
+<p><strong>Contexto:</strong> Roberto, motorista de caminhão com 15 anos de experiência, está transportando carga frigorificada em uma rota de 900 km com prazo apertado. Para cumprir a entrega sem pausa, utiliza anfetamina ("rebite"), prática ainda presente em rotas de longa distância. Após 14 horas de viagem, Roberto começa a ver "sombras" na pista, perde brevemente o controle do veículo em uma curva e provoca um sinistro com morte de dois ocupantes de um veículo de passeio.</p>
+<p><strong>Análise para discussão:</strong> (a) Quais são os fatores de risco sobrepostos neste caso? (b) Como o uso de anfetamina cria uma "ilusão de competência" que amplifica o risco? (c) Quais são as responsabilidades legais de Roberto, da transportadora e do embarcador que impôs o prazo? (d) Como você, como instrutor, trabalharia esse caso para candidatos a motoristas profissionais?</p>
+</div>
+
+<h2>6. O Papel do Instrutor como Multiplicador de Valores</h2>
+
+<h3>6.1 O Instrutor como Agente de Mudança Cultural</h3>
+
+<p>A Lei nº 9.503/97 (CTB), em seu art. 74, estabelece que a educação para o trânsito é direito de todos e constitui dever prioritário dos componentes do Sistema Nacional de Trânsito. Nesse contexto, o instrutor de CFC não é apenas um transmissor de técnicas de condução — é um educador com responsabilidade social de contribuir para a transformação da cultura do trânsito brasileiro.</p>
+
+<p>O Brasil convive com números alarmantes: segundo o Observatório Nacional de Segurança Viária, são registrados anualmente mais de 33.000 mortes e aproximadamente 500.000 feridos em sinistros de trânsito. Esses números colocam o país entre os mais violentos no trânsito do mundo, com custos humanos, econômicos e sociais imensos. A mudança desse quadro passa, necessariamente, pela formação de condutores com valores sólidos — e o instrutor é o elo fundamental dessa cadeia.</p>
+
+<h3>6.2 Competências Psicossociais do Instrutor</h3>
+
+<p>Para exercer com excelência o papel de multiplicador de valores, o instrutor precisa desenvolver competências que vão além do domínio técnico da condução e da legislação:</p>
+
+<ul>
+<li><strong>Inteligência emocional:</strong> Capacidade de reconhecer e gerir as próprias emoções e as emoções dos alunos no contexto das aulas, especialmente nas situações de tensão durante a condução</li>
+<li><strong>Empatia:</strong> Habilidade de se colocar no lugar do aluno — em especial daquele que sente medo ao volante ou enfrenta dificuldades de aprendizagem motora</li>
+<li><strong>Comunicação não violenta:</strong> Feedback corretivo sem humilhação; orientações claras sem autoritarismo; escuta ativa sem julgamento prévio</li>
+<li><strong>Modelagem comportamental:</strong> O instrutor é observado o tempo todo. Seu comportamento como pedestre, como passageiro e nos momentos em que assume o volante (no veículo de instrução) é pedagógico em si mesmo</li>
+<li><strong>Consistência:</strong> Coerência entre o que ensina e como vive. Um instrutor que acelera no sinal fechado, usa o celular ao volante ou não usa o cinto de segurança deslegitima todo o conteúdo que transmite em aula</li>
+</ul>
+
+<h3>6.3 O Relacionamento Interpessoal no Processo de Ensino</h3>
+
+<p>A relação instrutor-aluno é determinante para o aprendizado. A psicologia educacional demonstra que o vínculo de confiança é um pré-requisito para a aprendizagem significativa — especialmente em atividades que envolvem ansiedade e risco percebido, como a condução de veículo.</p>
+
+<p>Algumas orientações práticas para construir um relacionamento pedagógico saudável:</p>
+
+<ul>
+<li><strong>Primeira aula prática:</strong> Reserve os primeiros minutos para conhecer o aluno, sua experiência prévia (ou falta dela), e suas expectativas. Isso reduz a ansiedade e cria contrato pedagógico implícito</li>
+<li><strong>Feedback sanduíche:</strong> Ao corrigir erros, comece reconhecendo o que foi bem, indique o ponto de melhoria com precisão e clareza, e termine com encorajamento genuíno</li>
+<li><strong>Diferenciação pedagógica:</strong> Alunos aprendem em ritmos diferentes. Nunca compare o desempenho de um aluno com o de outros; compare o aluno consigo mesmo ao longo do tempo</li>
+<li><strong>Gestão do medo:</strong> O medo é fisiologicamente adaptativo, mas pode paralisar o aprendizado. Técnicas de respiração, progressão gradual de complexidade das situações e verbalização das ações ajudam a reduzir a ansiedade de performance</li>
+</ul>
+
+<div class="didactic-box reflection">
+<h4>Questão para Reflexão</h4>
+<p>Você já vivenciou (como aluno ou observador) uma situação em que a abordagem do instrutor aumentou a ansiedade do aprendiz em vez de reduzi-la? Quais foram os elementos dessa interação que produziram esse efeito negativo? E o que teria sido diferente em uma abordagem pedagogicamente mais adequada? Como os conceitos de inteligência emocional e comunicação não violenta poderiam ter transformado aquela situação?</p>
+</div>
+
+<h2>7. Formação do Caráter e Cultura de Paz no Trânsito</h2>
+
+<h3>7.1 Valores, Atitudes e Comportamento no Trânsito</h3>
+
+<p>A psicologia social distingue três componentes interdependentes da atitude humana: o <strong>componente cognitivo</strong> (o que a pessoa sabe e acredita sobre o objeto da atitude), o <strong>componente afetivo</strong> (o que a pessoa sente em relação a ele) e o <strong>componente comportamental</strong> (como a pessoa age em relação a ele). Para transformar comportamentos no trânsito, não basta transmitir conhecimento (componente cognitivo): é necessário trabalhar também as crenças emocionais e os valores que motivam a ação.</p>
+
+<p>Isso tem implicações diretas para o ensino no CFC. Um candidato pode memorizar perfeitamente a legislação de trânsito e ainda assim desenvolver comportamentos de risco quando, emocionalmente, não incorporou os valores que sustentam essas normas. O papel do instrutor é, portanto, trabalhar nos três planos: o que o aluno sabe, o que o aluno sente e o que o aluno faz.</p>
+
+<h3>7.2 Cidadania e Corresponsabilidade no Trânsito</h3>
+
+<p>A noção de <strong>cidadania no trânsito</strong> vai além do cumprimento das normas: envolve a responsabilidade ativa pela segurança de todos os usuários da via. O CTB, em seu art. 28, estabelece que o condutor deve, a todo momento, ter domínio de seu veículo, dirigindo-o com atenção e cuidados indispensáveis à segurança do trânsito. Mas a responsabilidade vai além: envolve solidariedade, cooperação e o reconhecimento de que o trânsito é um espaço público compartilhado.</p>
+
+<p>Estratégias pedagógicas para desenvolver cidadania no trânsito:</p>
+
+<ul>
+<li><strong>Perspectiva do outro:</strong> Exercícios que levam o aluno a se imaginar como pedestre, ciclista ou passageiro — os grupos mais vulneráveis no trânsito</li>
+<li><strong>Consequências reais:</strong> Uso de dados epidemiológicos, depoimentos de vítimas e familiares, e relatos de condutores que causaram sinistros — com abordagem ética e sem sensacionalismo</li>
+<li><strong>Compromisso público:</strong> Técnicas de psicologia do compromisso (como a assinatura de um "contrato pessoal" de comportamento seguro) aumentam a probabilidade de adesão a comportamentos saudáveis</li>
+<li><strong>Discussão de dilemas éticos:</strong> Situações-problema em que o aluno precisa tomar decisões que envolvem conflito entre interesse próprio e segurança coletiva</li>
+</ul>
+
+<h3>7.3 Gestão da Raiva e Autorregulação Emocional: Ferramentas Práticas</h3>
+
+<p>Ensinar ao aluno técnicas concretas de autorregulação emocional é uma das contribuições mais valiosas que o instrutor pode oferecer. Algumas estratégias com base científica:</p>
+
+<ul>
+<li><strong>Técnica STOP:</strong> S (pare o pensamento automático), T (respire fundo — técnica de respiração diafragmática), O (observe o que está sentindo sem reagir imediatamente), P (prossiga com escolha consciente, não impulsiva)</li>
+<li><strong>Reframing cognitivo:</strong> Ensinar o aluno a interpretar comportamentos dos outros motoristas de forma mais neutra ("talvez ele esteja com pressa por uma emergência") em vez de personalizar e reagir com hostilidade</li>
+<li><strong>Técnica do espaço amortecedor:</strong> Manter distância de segurança generosa não apenas como medida de freagem, mas como "espaço emocional" que reduz a sensação de ameaça territorial</li>
+<li><strong>Planejamento do trajeto:</strong> Sair com antecedência, conhecer alternativas de rota e ter expectativas realistas sobre o tempo de viagem reduzem drasticamente a tensão e a impaciência</li>
+</ul>
+
+<div class="didactic-box exercise">
+<h4>Atividade de Fixação</h4>
+<p><strong>Simulação de Cenário: O Condutor Emocional</strong></p>
+<p>Em duplas, um participante assume o papel de "instrutor" e o outro de "aluno" em uma situação de condução simulada (pode ser descrita verbalmente ou encenada em uma sala). O "aluno" recebe um cartão secreto com uma emoção: raiva (acabou de ter uma discussão acirrada), medo (é sua primeira aula prática), ou euforia (acabou de receber uma boa notícia). O "instrutor" deve: (a) identificar a emoção pelo comportamento observado; (b) aplicar uma estratégia de comunicação adequada à situação; (c) ao final, discutir com o grupo como a emoção afetou o "desempenho" do aluno. Registre: quais sinais comportamentais indicaram cada emoção? Quais estratégias de comunicação foram mais eficazes?</p>
+</div>
+
+<div class="didactic-box forum-topic">
+<h4>Tópico para Discussão</h4>
+<p><strong>"O instrutor também tem emoções — e isso é pedagógico"</strong></p>
+<p>Durante uma aula prática, o instrutor enfrenta situações de risco real que ativam sua própria resposta emocional (medo, frustração, raiva). Como o instrutor deve lidar com suas próprias emoções em sala de aula, especialmente no veículo de instrução? A demonstração controlada de emoções pelo instrutor (ex: verbalizar "Essa manobra me gerou tensão — vamos analisar o que aconteceu") pode ser pedagogicamente válida? Quais são os limites entre transparência emocional e gestão inadequada de emoções no ambiente de ensino? Discuta com o grupo como a inteligência emocional do instrutor impacta diretamente a aprendizagem e a segurança do aluno.</p>
+</div>
+
+<div class="didactic-box video-link">
+<h4>Vídeo Sugerido</h4>
+<p><strong>"Psicologia no Trânsito: Por que ficamos agressivos ao volante?"</strong></p>
+<p>Documentário de curta duração (disponível em plataformas de vídeo como YouTube) produzido pelo Conselho Federal de Psicologia ou pelo Departamento Nacional de Trânsito (DENATRAN/SENATRAN) abordando os mecanismos psicológicos da agressividade no trânsito, depoimentos de psicólogos do trânsito e casos reais.</p>
+<p><strong>Após a exibição, propor ao grupo:</strong> (a) Quais elementos do vídeo se relacionam com comportamentos que vocês já observaram no trânsito? (b) Como um instrutor de trânsito poderia usar esses conteúdos em uma aula teórica para candidatos a condutor de forma engajadora e não apenas expositiva?</p>
+<p><strong>Alternativa:</strong> Vídeos do canal do DETRAN/SP ou do ONSV sobre comportamento no trânsito, disponíveis gratuitamente. Antes da exibição, o instrutor deve previamente verificar a adequação do conteúdo ao nível e perfil dos alunos.</p>
+</div>
+
+<div class="glossary">
+<h3>Glossário</h3>
+<dl>
+<dt>Psicologia do Trânsito</dt>
+<dd>Ramo da psicologia aplicada que estuda o comportamento humano em situações de deslocamento nas vias públicas, incluindo processos perceptivos, cognitivos, emocionais e motivacionais que determinam como condutores, pedestres e passageiros agem no trânsito.</dd>
+
+<dt>Fadiga de Condução</dt>
+<dd>Estado de diminuição funcional — física e/ou cognitiva — resultante do esforço prolongado de conduzir um veículo, caracterizado por redução do tempo de reação, dificuldade de manutenção da atenção e comprometimento do julgamento. Distinto da sonolência, embora frequentemente associado a ela.</dd>
+
+<dt>Microsono</dt>
+<dd>Episódio involuntário de sono com duração de 2 a 10 segundos que ocorre sem percepção consciente do condutor, geralmente associado à privação severa de sono ou fadiga extrema. Representa um dos riscos mais graves da condução, pela ausência de percepção de perigo pelo próprio condutor.</dd>
+
+<dt>Sequestro Amigdaliano</dt>
+<dd>Fenômeno neurológico descrito por Daniel Goleman em que a amígdala cerebral (centro emocional) assume o controle da resposta comportamental antes que o córtex pré-frontal (raciocínio lógico) possa avaliar a situação — resultando em reações impulsivas e potencialmente perigosas no trânsito.</dd>
+
+<dt>Road Rage</dt>
+<dd>Expressão em inglês (raiva na estrada) que descreve episódios de violência — física ou verbal — praticados por condutores no contexto do trânsito, frequentemente como resposta percebida a uma afronta ou frustração. Representa o nível extremo no espectro da agressividade ao volante.</dd>
+
+<dt>Locus de Controle</dt>
+<dd>Conceito da psicologia social que descreve a crença do indivíduo sobre a origem das causas dos eventos em sua vida. Condutores com locus de controle externo tendem a atribuir sinistros ao azar ou a fatores externos, reduzindo sua motivação para comportamentos preventivos.</dd>
+
+<dt>Tolerância ao Álcool</dt>
+<dd>Fenômeno farmacológico em que o consumidor crônico de álcool desenvolve menor resposta comportamental aparente a determinadas concentrações de etanol. Perigoso no trânsito porque o indivíduo não apresenta sinais externos de embriaguez enquanto tem a capacidade de condução igualmente comprometida.</dd>
+
+<dt>Síndrome da Apneia Obstrutiva do Sono (SAOS)</dt>
+<dd>Distúrbio do sono caracterizado por obstrução intermitente das vias aéreas superiores durante o sono, provocando pausas respiratórias repetidas, sono não restaurador e sonolência diurna excessiva. Fator de risco significativo para sinistros de trânsito, especialmente em motoristas profissionais.</dd>
+
+<dt>Viés de Otimismo</dt>
+<dd>Tendência cognitiva a acreditar que eventos negativos (como sinistros de trânsito) têm menor probabilidade de acontecer com a própria pessoa do que com os outros. Contribui para a subestimação de riscos e a adoção de comportamentos inseguros.</dd>
+
+<dt>Comunicação Não Violenta (CNV)</dt>
+<dd>Abordagem de comunicação interpessoal desenvolvida pelo psicólogo Marshall Rosenberg, baseada na expressão de observações, sentimentos, necessidades e pedidos sem julgamentos ou críticas. Ferramenta pedagógica importante para o instrutor na condução de aulas com alunos ansiosos ou resistentes.</dd>
+
+<dt>Autorregulação Emocional</dt>
+<dd>Capacidade de reconhecer, monitorar e modular as próprias emoções e impulsos comportamentais, permitindo respostas adaptativas em vez de reações automáticas. Competência fundamental para condutores seguros e para instrutores eficazes.</dd>
+
+<dt>Modelagem Comportamental</dt>
+<dd>Processo de aprendizagem por observação e imitação descrito por Albert Bandura. No contexto do ensino de direção, o instrutor é um modelo comportamental permanente: seu próprio comportamento no e fora do veículo de instrução é percebido e internalizado pelo aluno.</dd>
+</dl>
+</div>
+
+<div class="bibliography">
+<h3>Referências e Bibliografia</h3>
+
+<h4>Legislação</h4>
+<ul>
+<li>BRASIL. <strong>Lei nº 9.503, de 23 de setembro de 1997</strong>. Institui o Código de Trânsito Brasileiro. Brasília: Casa Civil, 1997. Arts. 1º, 28, 74, 147, 163, 252 (VIII), 306.</li>
+<li>BRASIL. <strong>Lei nº 11.705, de 19 de junho de 2008</strong>. "Lei Seca". Altera o CTB estabelecendo tolerância zero para álcool ao volante. Brasília, 2008.</li>
+<li>BRASIL. <strong>Lei nº 12.760, de 20 de dezembro de 2012</strong>. Altera a Lei nº 9.503/97 (CTB) para caracterizar o crime de embriaguez ao volante. Brasília, 2012.</li>
+<li>BRASIL. <strong>Lei nº 13.281, de 4 de maio de 2016</strong>. Atualiza penalidades para uso de celular ao volante e embriaguez. Brasília, 2016.</li>
+<li>BRASIL. <strong>Lei nº 14.071, de 13 de outubro de 2020</strong>. Atualiza o CTB; reforça proibição de equipamentos de comunicação ao volante. Brasília, 2020.</li>
+<li>CONTRAN. <strong>Resolução nº 1020, de 2025</strong>. Dispõe sobre o Curso de Formação de Instrutor de Trânsito. Brasília: CONTRAN, 2025.</li>
+</ul>
+
+<h4>Bibliografia</h4>
+<ul>
+<li>GOLEMAN, Daniel. <strong>Inteligência Emocional</strong>. Rio de Janeiro: Objetiva, 1995. (Capítulos sobre sequestro amigdaliano e autorregulação)</li>
+<li>DAMÁSIO, António. <strong>O Erro de Descartes: Emoção, Razão e o Cérebro Humano</strong>. São Paulo: Companhia das Letras, 1994.</li>
+<li>ROSENBERG, Marshall B. <strong>Comunicação Não Violenta: Técnicas para Aprimorar Relacionamentos Pessoais e Profissionais</strong>. São Paulo: Ágora, 2006.</li>
+<li>BANDURA, Albert. <strong>Social Learning Theory</strong>. Englewood Cliffs: Prentice Hall, 1977.</li>
+<li>VASCONCELOS, Eduardo Alcântara de. <strong>Circular é Preciso, Viver não é Preciso: A História do Trânsito na Cidade de São Paulo</strong>. São Paulo: Annablume/FAPESP, 1999.</li>
+<li>THIELEN, Iara Picchioni; HARTMANN, Ricardo Chagas; SOARES, Daniele Pieta. <strong>Percepção de Risco e Excesso de Velocidade</strong>. <em>Cadernos de Saúde Pública</em>, Rio de Janeiro, v. 24, n. 1, p. 131-139, jan. 2008.</li>
+<li>ALCHIERI, João Carlos; STROEHER, Flávia; DOTTA, Adriana. <strong>Avaliação Psicológica no Contexto de Trânsito</strong>. Porto Alegre: Artmed, 2005.</li>
+<li>MARIN, Leila; QUEIROZ, Marcos Siqueira. <strong>A Atualidade dos Acidentes de Trânsito na Era da Velocidade: Uma Visão Geral</strong>. <em>Cadernos de Saúde Pública</em>, v. 16, n. 1, 2000.</li>
+<li>ROZESTRATEN, Reinier J. A. <strong>Psicologia do Trânsito: Conceitos e Processos Básicos</strong>. São Paulo: EPU/EDUSP, 1988. (obra de referência fundamental da área no Brasil)</li>
+</ul>
+
+<h4>Sites Oficiais</h4>
+<ul>
+<li>Observatório Nacional de Segurança Viária (ONSV): www.onsv.org.br</li>
+<li>Secretaria Nacional de Trânsito (SENATRAN/DENATRAN): www.gov.br/senatran</li>
+<li>Conselho Federal de Psicologia — Psicologia do Trânsito: cfp.org.br</li>
+<li>Organização Mundial da Saúde — Global Status Report on Road Safety: who.int/roadsafety</li>
+<li>Portal do DETRAN do seu estado — Estatísticas de sinistros e materiais educativos</li>
+</ul>
+</div>
+
+<div class="closing">
+<p>A psicologia do trânsito revela uma verdade fundamental: o maior obstáculo à segurança viária não está nas vias, nos veículos ou nas leis — está dentro de cada um de nós. Medos não gerenciados, raivas não reconhecidas, cansaço ignorado, substâncias subestimadas. Como instrutor de trânsito, você tem o privilégio e a responsabilidade de ser o primeiro — e talvez o único — profissional que trabalha esses temas com profundidade com o futuro condutor. Cada aluno que sai do CFC com não apenas uma habilitação, mas com valores sólidos, autoconhecimento e comprometimento com a paz no trânsito, representa uma vida que você ajudou a preservar — a dele, a de suas famílias, a de pedestres desconhecidos que jamais saberão que você existiu. Essa é a grandeza silenciosa da sua profissão. Conduza com propósito.</p>
+</div>
+        </div>
+
+        <div class="topic-nav">
+            <a href="modulo-03-topico-16-vulneraveis-no-transito.html">&larr; Anterior</a>
+            <span class="placeholder">&rarr;</span>
+        </div>
+
+        <div class="footer">
+            <a href="https://www.condutorlegalead.com.br">Instrutor de Trânsito EAD</a> — Curso de Reciclagem para Condutores — 45h/a — Resolução CONTRAN 1020/2025<br>
+            Material didático | ITT — Instituto Tecnológico de Transporte e Trânsito
+        </div>
+    </div>
+</body>
+</html>

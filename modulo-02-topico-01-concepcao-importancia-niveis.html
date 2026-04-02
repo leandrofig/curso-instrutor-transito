@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Concepção, Importância e Níveis — Didática | Instrutor de Trânsito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ===== Base Reset & Typography ===== */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #1a1a1a;
+            background: linear-gradient(180deg, rgba(246,241,215,0.92) 0%, rgba(235,225,170,0.85) 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .page-container {
+            max-width: 920px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.06);
+            overflow: hidden;
+        }
+
+        /* ===== Site Header with Logo ===== */
+        .site-header {
+            background: #f9f6eb;
+            padding: 18px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #DCBD32;
+        }
+        .site-header .logo img {
+            height: 42px;
+            width: auto;
+        }
+        .site-header .course-badge {
+            background: linear-gradient(135deg, #DCBD32, #c4a82a);
+            color: #1a1a1a;
+            padding: 5px 16px;
+            border-radius: 20px;
+            font-size: 0.78em;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== Breadcrumb ===== */
+        .breadcrumb {
+            padding: 12px 40px;
+            background: #f9f6eb;
+            border-bottom: 1px solid #e8e0c0;
+            font-size: 0.85em;
+            color: #6b5e3e;
+        }
+        .breadcrumb a {
+            color: #8b7a3e;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb .separator { margin: 0 8px; opacity: 0.5; }
+
+        /* ===== Progress Bar ===== */
+        .progress-container { padding: 14px 40px 10px; }
+        .progress-label { font-size: 0.8em; color: #8b7a3e; margin-bottom: 6px; font-weight: 500; }
+        .progress-bar { height: 6px; background: #e8e0c0; border-radius: 3px; overflow: hidden; }
+        .progress-bar .fill {
+            height: 100%;
+            border-radius: 3px;
+            background: linear-gradient(90deg, #DCBD32, #c4a82a);
+            transition: width 0.3s;
+        }
+
+        /* ===== Module Header ===== */
+        .module-header {
+            padding: 32px 40px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #3a3a3a 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .module-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #DCBD32, #e8d44d, #DCBD32);
+        }
+        .module-header .module-label {
+            font-size: 0.82em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #DCBD32;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .module-header h1 {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin: 0 0 4px;
+            color: white;
+        }
+        .module-header .topic-label {
+            font-size: 1em;
+            opacity: 0.88;
+            font-weight: 400;
+        }
+
+        /* ===== Content Body ===== */
+        .content-body { padding: 36px 40px; }
+        img { max-width: 100%; height: auto; }
+        a { color: #8b6914; text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; color: #6b5010; }
+        p { margin-bottom: 1em; text-align: justify; }
+        h2 {
+            color: #1a1a1a;
+            font-size: 1.45em;
+            margin: 2em 0 0.7em;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #DCBD32;
+            font-weight: 700;
+        }
+        h3 { color: #3a3a3a; font-size: 1.2em; margin: 1.4em 0 0.5em; font-weight: 600; }
+        h4 { color: #4a4a4a; font-size: 1.05em; margin: 1.1em 0 0.4em; font-weight: 600; }
+        ul, ol { margin: 0.5em 0 1em 1.5em; }
+        li { margin-bottom: 0.4em; }
+        blockquote {
+            border-left: 3px solid #DCBD32;
+            padding: 12px 20px;
+            margin: 1em 0;
+            color: #4a4a4a;
+            background: #fdf8e1;
+            border-radius: 0 6px 6px 0;
+        }
+        hr { border: none; border-top: 1px solid #e8e0c0; margin: 2em 0; }
+
+        /* ===== Objectives ===== */
+        .objectives {
+            background: #fdf8e1;
+            border-left: 5px solid #DCBD32;
+            padding: 22px 26px;
+            margin: 24px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        .objectives h3 { color: #6b5010; margin-top: 0; font-size: 1.1em; }
+        .objectives h3::before { content: "\1F3AF "; }
+        .objectives ul { margin-bottom: 0; }
+
+        /* ===== Didactic Component Boxes ===== */
+        .didactic-box {
+            padding: 22px 26px;
+            margin: 28px 0;
+            border-radius: 0 10px 10px 0;
+            position: relative;
+        }
+        .didactic-box h4 { margin-top: 0; font-size: 1.05em; }
+        .didactic-box p:last-child, .didactic-box ul:last-child, .didactic-box ol:last-child { margin-bottom: 0; }
+
+        /* Case Study */
+        .case-study {
+            background: #e6fffa;
+            border-left: 5px solid #319795;
+        }
+        .case-study h4 { color: #234e52; }
+        .case-study h4::before { content: "\1F4CB "; }
+
+        /* Reflection */
+        .reflection {
+            background: #fffbeb;
+            border-left: 5px solid #F59E0B;
+        }
+        .reflection h4 { color: #78350f; }
+        .reflection h4::before { content: "\1F914 "; }
+
+        /* Exercise */
+        .exercise {
+            background: #f0fdf4;
+            border-left: 5px solid #22C55E;
+        }
+        .exercise h4 { color: #14532d; }
+        .exercise h4::before { content: "\270F\FE0F "; }
+
+        /* Forum Topic */
+        .forum-topic {
+            background: #faf5ff;
+            border-left: 5px solid #8B5CF6;
+        }
+        .forum-topic h4 { color: #3b0764; }
+        .forum-topic h4::before { content: "\1F4AC "; }
+
+        /* Legal Reference */
+        .legal-reference {
+            background: #f7fafc;
+            border: 1px solid #cbd5e1;
+            border-left: 5px solid #4a5568;
+            border-radius: 0 10px 10px 0;
+        }
+        .legal-reference h4 { color: #1a202c; }
+        .legal-reference h4::before { content: "\2696\FE0F "; }
+        .legal-reference blockquote { font-style: italic; background: #edf2f7; border-left-color: #4a5568; }
+
+        /* Video Link */
+        .video-link {
+            background: #fef2f2;
+            border-left: 5px solid #EF4444;
+        }
+        .video-link h4 { color: #7f1d1d; }
+        .video-link h4::before { content: "\1F3AC "; }
+        .video-link a { color: #dc2626; font-weight: 600; }
+
+        /* Warning */
+        .warning {
+            background: #fef2f2;
+            border-left: 5px solid #dc2626;
+            padding: 16px 22px;
+            margin: 22px 0;
+            border-radius: 0 8px 8px 0;
+            font-weight: 500;
+        }
+        .warning::before { content: "\26A0\FE0F "; font-size: 1.1em; }
+
+        /* Important */
+        .important {
+            background: #fffbeb;
+            border-left: 5px solid #F59E0B;
+            padding: 16px 22px;
+            margin: 22px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .important::before { content: "\2757 "; font-size: 1.1em; }
+
+        /* Tip */
+        .tip {
+            background: #ecfdf5;
+            border-left: 5px solid #10b981;
+            padding: 16px 22px;
+            margin: 22px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .tip::before { content: "\1F4A1 "; font-size: 1.1em; }
+
+        /* ===== Glossary ===== */
+        .glossary {
+            background: #fdf8e1;
+            border: 1px solid #e8d44d;
+            padding: 26px;
+            margin: 32px 0;
+            border-radius: 12px;
+        }
+        .glossary h3 { color: #6b5010; margin-top: 0; border-bottom: 2px solid #DCBD32; padding-bottom: 8px; }
+        .glossary h3::before { content: "\1F4D6 "; }
+        .glossary dl { margin: 0; }
+        .glossary dt { font-weight: 700; color: #6b5010; margin-top: 14px; }
+        .glossary dd { margin-left: 20px; margin-bottom: 6px; color: #4a4a4a; }
+
+        /* ===== Bibliography ===== */
+        .bibliography {
+            background: #faf9f2;
+            border-top: 4px solid #DCBD32;
+            padding: 26px;
+            margin-top: 40px;
+            border-radius: 0 0 12px 12px;
+        }
+        .bibliography h3 { color: #4a4a4a; margin-top: 0; }
+        .bibliography h3::before { content: "\1F4DA "; }
+        .bibliography h4 { color: #6b5e3e; margin-top: 16px; font-size: 1em; }
+        .bibliography ul { list-style-type: disc; }
+        .bibliography li { margin-bottom: 6px; font-size: 0.93em; }
+
+        /* ===== Diagrams / Figures ===== */
+        .diagram { text-align: center; margin: 28px 0; }
+        .diagram img {
+            max-width: 100%;
+            border: 1px solid #e8e0c0;
+            border-radius: 10px;
+            padding: 12px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .diagram figcaption {
+            font-size: 0.88em;
+            color: #6b5e3e;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* ===== Tables ===== */
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.93em; }
+        thead th {
+            background: #1a1a1a;
+            color: #DCBD32;
+            padding: 12px 14px;
+            text-align: left;
+            font-weight: 600;
+        }
+        tbody td { padding: 10px 14px; border-bottom: 1px solid #e8e0c0; }
+        tbody tr:nth-child(even) { background: #faf9f2; }
+        tbody tr:hover { background: #f5f0d0; }
+
+        /* ===== Closing Message ===== */
+        .closing {
+            text-align: center;
+            padding: 28px;
+            margin-top: 32px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            color: #DCBD32;
+        }
+        .closing p { text-align: center; margin: 0; color: #e8e0c0; }
+        .closing .emoji { font-size: 1.5em; display: block; margin-bottom: 10px; }
+
+        /* ===== Topic Navigation ===== */
+        .topic-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-top: 1px solid #e8e0c0;
+            background: #faf9f2;
+        }
+        .topic-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #6b5010;
+            padding: 10px 20px;
+            border: 2px solid #DCBD32;
+            border-radius: 8px;
+            font-size: 0.9em;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .topic-nav a:hover {
+            background: #DCBD32;
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .topic-nav .placeholder { visibility: hidden; padding: 10px 20px; }
+
+        /* ===== Footer ===== */
+        .footer {
+            text-align: center;
+            padding: 18px 40px;
+            background: #1a1a1a;
+            font-size: 0.8em;
+            color: #8b7a3e;
+            border-radius: 0 0 16px 16px;
+        }
+        .footer a { color: #DCBD32; }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            body { padding: 8px; }
+            .content-body { padding: 20px; }
+            .site-header { padding: 14px 20px; }
+            .site-header .logo img { height: 32px; }
+            .breadcrumb { padding: 10px 20px; }
+            .module-header { padding: 24px 20px; }
+            .module-header h1 { font-size: 1.25em; }
+            .progress-container { padding: 10px 20px 8px; }
+            .topic-nav { padding: 15px 20px; flex-direction: column; gap: 10px; }
+            .topic-nav a { width: 100%; justify-content: center; }
+            .topic-nav .placeholder { display: none; }
+            table { font-size: 0.85em; }
+            thead th, tbody td { padding: 8px 10px; }
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .page-container { box-shadow: none; }
+            .topic-nav, .progress-container, .footer, .site-header { display: none; }
+            .module-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .didactic-box { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="site-header">
+            <div class="logo">
+                <img src="data:image/png;base64,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" alt="Instrutor de Trânsito">
+            </div>
+            <span class="course-badge">CURSO 45h/a</span>
+        </div>
+
+        <div class="breadcrumb">
+            <a href="index.html">Curso de Reciclagem</a>
+            <span class="separator">&rsaquo;</span>
+            <a href="index.html">Módulo 02</a>
+            <span class="separator">&rsaquo;</span>
+            Tópico 1: Concepção, Importância e Níveis
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-label">Módulo 02 — Tópico 1 de 5</div>
+            <div class="progress-bar">
+                <div class="fill" style="width: 20%"></div>
+            </div>
+        </div>
+
+        <div class="module-header">
+            <div class="module-label">Módulo 02 — Didática</div>
+            <h1>Tópico 1: Concepção, Importância e Níveis</h1>
+            <div class="topic-label">Curso de Reciclagem para Condutores — 45 horas/aula | Resolução CONTRAN 1020/2025</div>
+        </div>
+
+        <div class="content-body">
+            <div class="objectives">
+<h3>Objetivos de Aprendizagem</h3>
+<ul>
+  <li>Compreender o conceito de didática e sua evolução histórica no contexto da educação formal e da formação de condutores</li>
+  <li>Reconhecer a importância da didática na qualidade do ensino ministrado em Centros de Formação de Condutores (CFC)</li>
+  <li>Distinguir e aplicar os três níveis de planejamento educacional: macro, meso e micro</li>
+  <li>Elaborar planos de aula estruturados com objetivos claros, conteúdos organizados e estratégias adequadas ao perfil do aluno-condutor</li>
+  <li>Aplicar a Taxonomia de Bloom na definição de objetivos educacionais mensuráveis e progressivos</li>
+  <li>Organizar conteúdos de forma sequencial e lógica, respeitando a progressão pedagógica do processo de habilitação</li>
+</ul>
+</div>
+
+<p>A formação de um condutor competente e seguro vai muito além de ensinar a manobrar um veículo. Envolve um processo intencional, planejado e fundamentado em princípios pedagógicos que orientam cada decisão do instrutor — da escolha dos conteúdos à forma de avaliação dos alunos. Esse conjunto de princípios e técnicas é o que chamamos de <strong>didática</strong>: a ciência que estuda o processo de ensino e aprendizagem em sua totalidade.</p>
+
+<p>No contexto dos Centros de Formação de Condutores (CFC), a didática assume uma relevância ímpar. O instrutor de trânsito lida diariamente com alunos de perfis extremamente variados — em termos de idade, escolaridade, experiências anteriores, medos e motivações. Sem uma base didática sólida, o risco é transformar a aula em mera transmissão mecânica de informações, sem garantia de que o aprendizado de fato ocorra. E as consequências de um aprendizado superficial no trânsito são, literalmente, uma questão de vida ou morte.</p>
+
+<p>A Resolução CONTRAN 1020/2025, ao regulamentar os cursos de habilitação e reciclagem, reconhece explicitamente que a qualidade da instrução depende da capacitação pedagógica dos instrutores. Por isso, este módulo coloca a didática no centro da sua formação: não como teoria abstrata, mas como ferramenta prática que você usará a cada aula, em cada explicação, em cada correção de manobra. Ao dominar os fundamentos didáticos, você se torna não apenas um técnico em direção veicular, mas um educador capaz de transformar comportamentos e salvar vidas.</p>
+
+<h2>1.1 Conceito de Didática e Sua Evolução Histórica</h2>
+
+<p>A palavra <strong>didática</strong> tem origem grega: <em>didaktikós</em>, que significa "apto para ensinar", derivado de <em>didáskein</em> ("ensinar"). Historicamente, o termo ganhou projeção com o educador tcheco <strong>Jan Amos Comenius</strong> (1592–1670), autor da obra <em>Didactica Magna</em> (1657), considerada o marco fundador da didática como disciplina. Comenius propôs que se deveria ensinar "tudo a todos" — um princípio revolucionário para a época, que fundamenta até hoje a ideia de educação inclusiva e universal.</p>
+
+<p>Ao longo dos séculos, a didática passou por diversas transformações, acompanhando as correntes filosóficas e científicas de cada período:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Período</th>
+      <th>Corrente</th>
+      <th>Ênfase</th>
+      <th>Implicação para o Ensino</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Séc. XVII–XVIII</td>
+      <td>Didática Tradicional</td>
+      <td>Transmissão de conteúdos pelo professor</td>
+      <td>Aula expositiva, memorização, disciplina rígida</td>
+    </tr>
+    <tr>
+      <td>Séc. XIX–XX</td>
+      <td>Escola Nova (Dewey)</td>
+      <td>Aprendizagem pela experiência</td>
+      <td>Atividades práticas, protagonismo do aluno</td>
+    </tr>
+    <tr>
+      <td>Meados séc. XX</td>
+      <td>Tecnicismo</td>
+      <td>Eficiência e objetivos mensuráveis</td>
+      <td>Planejamento detalhado, avaliação por objetivos</td>
+    </tr>
+    <tr>
+      <td>Final séc. XX</td>
+      <td>Construtivismo (Piaget, Vygotsky)</td>
+      <td>O aluno constrói o conhecimento</td>
+      <td>Mediação, zona de desenvolvimento proximal</td>
+    </tr>
+    <tr>
+      <td>Séc. XXI</td>
+      <td>Didática Crítica e Complexa</td>
+      <td>Formação integral, cidadania, autonomia</td>
+      <td>Educação para valores, pensamento crítico</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Para o instrutor de trânsito, essa evolução histórica não é abstrata: ela explica por que simplesmente "mostrar como se faz" não é suficiente. O aluno precisa compreender o <em>porquê</em> das regras, construir hábitos seguros e desenvolver julgamento crítico para situações imprevisíveis no trânsito — o que exige uma didática moderna, ativa e reflexiva.</p>
+
+<h3>1.1.1 Didática Geral vs. Didática Específica</h3>
+
+<p>É importante distinguir dois planos da didática:</p>
+
+<ul>
+  <li><strong>Didática Geral:</strong> trata dos princípios, métodos e técnicas de ensino aplicáveis a qualquer disciplina ou contexto educativo.</li>
+  <li><strong>Didática Específica (ou Especial):</strong> aplica esses princípios a um campo de conhecimento particular. No caso do CFC, trata-se da didática do ensino de direção veicular, legislação de trânsito, mecânica básica e direção defensiva.</li>
+</ul>
+
+<div class="didactic-box reflection">
+<h4>Questão para Reflexão</h4>
+<p>Pense em um instrutor de trânsito que você conheceu ou imaginou. Ele apenas "mostrava" como dirigir, ou também <em>explicava</em> os raciocínios por trás de cada manobra? Qual abordagem você acredita que forma condutores mais seguros a longo prazo? Como a didática específica do trânsito difere do simples repasse de técnicas de pilotagem?</p>
+</div>
+
+<h2>1.2 Importância da Didática na Formação de Condutores</h2>
+
+<p>A legislação brasileira reconhece que o trânsito seguro é um <strong>direito de todos</strong>. O artigo 1º, §2º do Código de Trânsito Brasileiro (Lei 9.503/1997) estabelece que "o trânsito, em condições seguras, é um direito de todos e dever dos órgãos e entidades componentes do Sistema Nacional de Trânsito". Já o §5º deste mesmo artigo determina que os órgãos de trânsito darão prioridade em suas ações à <strong>defesa da vida</strong>.</p>
+
+<p>Essa perspectiva legal situa o instrutor de CFC como agente direto na concretização desse direito. A qualidade do seu ensino tem impacto mensurável nos índices de sinistros de trânsito. Estudos do DENATRAN e do IPEA indicam que a maioria dos sinistros graves envolve falha humana — e grande parte dessas falhas pode ser prevenida por uma formação inicial mais robusta, pedagogicamente estruturada.</p>
+
+<div class="important">
+<strong>Por que a Didática Salva Vidas:</strong> Um aluno que apenas reproduz mecanicamente os movimentos ensinados pelo instrutor durante as aulas pode entrar em colapso diante de uma situação inesperada. Um aluno formado com boa didática — que compreende os princípios, desenvolveu o julgamento e internalizou atitudes seguras — tem recursos para tomar decisões corretas mesmo em cenários novos.
+</div>
+
+<h3>1.2.1 Funções da Didática no CFC</h3>
+
+<p>No ambiente do Centro de Formação de Condutores, a didática cumpre funções específicas:</p>
+
+<ul>
+  <li><strong>Função orientadora:</strong> ajuda o instrutor a definir para onde vai, o que quer alcançar e como vai chegar lá (objetivos, conteúdos, métodos).</li>
+  <li><strong>Função organizadora:</strong> estrutura a sequência lógica dos conteúdos, evitando lacunas ou redundâncias desnecessárias no currículo.</li>
+  <li><strong>Função motivadora:</strong> fornece ao instrutor recursos para engajar o aluno, tornando o aprendizado significativo e conectado à sua realidade.</li>
+  <li><strong>Função avaliadora:</strong> orienta como verificar se o aprendizado de fato ocorreu — não apenas se o aluno "passou" no teste, mas se está preparado para dirigir com segurança.</li>
+  <li><strong>Função formativa:</strong> vai além do conteúdo técnico, contribuindo para a formação de atitudes, valores e comportamentos cidadãos no trânsito.</li>
+</ul>
+
+<div class="didactic-box case-study">
+<h4>Estudo de Caso: O Instrutor Técnico vs. O Instrutor Didático</h4>
+<p><strong>Situação:</strong> Carlos e Rodrigo são instrutores no mesmo CFC. Carlos tem 15 anos de experiência como motorista profissional e domina todas as técnicas de condução. Rodrigo tem 5 anos de experiência, mas fez um curso de formação pedagógica e planeja cada aula cuidadosamente.</p>
+<p><strong>O que aconteceu:</strong> Após 6 meses, uma pesquisa de satisfação e de desempenho nos exames mostrou que os alunos de Rodrigo tinham taxa de aprovação 23% maior nas provas teóricas e 15% maior nas práticas. Além disso, os alunos de Rodrigo relatavam maior confiança e menor ansiedade ao volante.</p>
+<p><strong>Análise:</strong> Carlos transmitia informações corretas, mas sem organização pedagógica. Rodrigo definia objetivos claros por aula, usava analogias para explicar conceitos técnicos, fazia revisões ao início de cada encontro e verificava a compreensão antes de avançar para o próximo conteúdo.</p>
+<p><strong>Lição:</strong> Conhecimento técnico é condição necessária, mas não suficiente, para ser um bom instrutor. A didática é o diferencial que converte experiência em ensino eficaz.</p>
+</div>
+
+<h3>1.2.2 O Instrutor como Mediador Pedagógico</h3>
+
+<p>A concepção moderna de ensino, inspirada em Vygotsky, posiciona o professor/instrutor não como mero transmissor de informações, mas como <strong>mediador</strong>: aquele que cria as condições para que o aluno construa o próprio conhecimento. No contexto do CFC, isso significa:</p>
+
+<ul>
+  <li>Identificar o que o aluno já sabe (conhecimentos prévios) e partir daí;</li>
+  <li>Apresentar situações-problema reais do trânsito, não apenas procedimentos mecânicos;</li>
+  <li>Oferecer suporte gradualmente menor à medida que o aluno ganha autonomia;</li>
+  <li>Estimular o aluno a verbalizar seu raciocínio durante a prática ("Por que você reduziu a velocidade agora?");</li>
+  <li>Dar feedback específico, construtivo e imediato.</li>
+</ul>
+
+<div class="tip">
+<strong>Dica Prática:</strong> Antes de iniciar a aula prática de hoje, pergunte ao aluno o que ele aprendeu na aula anterior e como aplicou esse aprendizado fora do CFC. Essa simples ação ativa conhecimentos anteriores, aumenta o engajamento e fornece ao instrutor informações valiosas sobre o progresso real do aluno.
+</div>
+
+<h2>1.3 Níveis de Planejamento: Macro, Meso e Micro</h2>
+
+<p>O planejamento educacional opera em três níveis hierárquicos complementares, cada um com seu escopo, responsáveis e instrumentos próprios. Compreender esses níveis é essencial para que o instrutor situe seu trabalho no quadro maior da organização pedagógica do CFC.</p>
+
+<h3>1.3.1 Nível Macro (Planejamento Institucional)</h3>
+
+<p>O planejamento <strong>macro</strong> é o mais abrangente. No contexto do CFC, ele é definido pelo <strong>DENATRAN/SENATRAN</strong> (agora SENATRAN, vinculado ao Ministério dos Transportes) e pelo <strong>CONTRAN</strong>, por meio de resoluções e normas nacionais. Define:</p>
+
+<ul>
+  <li>A estrutura curricular obrigatória dos cursos de habilitação (categorias A, B, C, D, E);</li>
+  <li>A carga horária mínima por módulo (teórico e prático);</li>
+  <li>Os conteúdos obrigatórios e sua organização em módulos;</li>
+  <li>Os requisitos para credenciamento de CFCs e habilitação de instrutores;</li>
+  <li>Os critérios de avaliação (exames teórico e prático do DETRAN).</li>
+</ul>
+
+<p>O instrutor não elabora o nível macro, mas precisa compreendê-lo profundamente para que seu trabalho esteja alinhado aos objetivos maiores do sistema de formação de condutores no Brasil.</p>
+
+<div class="warning">
+<strong>Atenção:</strong> A Resolução CONTRAN 1020/2025 introduziu mudanças significativas na estrutura curricular dos cursos de habilitação. O instrutor deve estar atualizado com essas normas e verificar periodicamente se o currículo do seu CFC está em conformidade com a legislação vigente.
+</div>
+
+<h3>1.3.2 Nível Meso (Planejamento do Curso)</h3>
+
+<p>O planejamento <strong>meso</strong> é intermediário e corresponde ao nível do curso como um todo. No CFC, é elaborado pelo <strong>responsável técnico pedagógico</strong> em conjunto com a coordenação, e materializa-se no <strong>Plano de Curso</strong>. Define:</p>
+
+<ul>
+  <li>Os objetivos gerais do curso (o que o aluno deve ser capaz de fazer ao concluí-lo);</li>
+  <li>A organização dos conteúdos em módulos e unidades;</li>
+  <li>A distribuição da carga horária entre módulos;</li>
+  <li>As estratégias metodológicas gerais (aulas expositivas, simuladores, práticas em pista, etc.);</li>
+  <li>O sistema de avaliação (frequência, provas, práticas avaliativas);</li>
+  <li>Os recursos didáticos disponíveis no CFC.</li>
+</ul>
+
+<h3>1.3.3 Nível Micro (Planejamento da Aula)</h3>
+
+<p>O planejamento <strong>micro</strong> é o mais específico e o de responsabilidade direta do instrutor. Corresponde ao <strong>Plano de Aula</strong> e define:</p>
+
+<ul>
+  <li>Os objetivos específicos da aula (o que o aluno aprenderá naquele encontro);</li>
+  <li>Os conteúdos a serem abordados;</li>
+  <li>A sequência e o tempo de cada momento da aula;</li>
+  <li>As estratégias e técnicas de ensino a utilizar;</li>
+  <li>Os recursos didáticos necessários (quadro, projetor, maquetes, simulador);</li>
+  <li>A forma de verificação da aprendizagem ao final da aula.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Instrumento</th>
+      <th>Responsável no CFC</th>
+      <th>Abrangência Temporal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Macro</td>
+      <td>Resolução CONTRAN / Grade Nacional</td>
+      <td>SENATRAN / CONTRAN / DETRAN</td>
+      <td>Plurianual (política educacional)</td>
+    </tr>
+    <tr>
+      <td>Meso</td>
+      <td>Plano de Curso</td>
+      <td>Direção / Resp. Técnico do CFC</td>
+      <td>Semestral / Anual</td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td>Plano de Aula / Plano de Unidade</td>
+      <td>Instrutor</td>
+      <td>Diário / Por encontro</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="didactic-box reflection">
+<h4>Questão para Reflexão</h4>
+<p>Um instrutor que "improvisa" as aulas sem planejamento pode ter muito conhecimento técnico, mas está atuando de forma segura do ponto de vista pedagógico? Que riscos pedagógicos — e até legais — essa prática pode acarretar para o CFC e para o próprio instrutor? Como o planejamento micro protege tanto o aluno quanto o profissional?</p>
+</div>
+
+<h2>1.4 Planejamento de Ensino no CFC</h2>
+
+<p>O planejamento de ensino é o processo pelo qual o instrutor organiza, com antecedência, todas as ações necessárias para que a aprendizagem ocorra de forma eficiente. Não se trata de uma camisa de força que enrijece a aula, mas de um <strong>mapa de navegação</strong>: mesmo que o percurso precise ser ajustado ao longo do caminho, é fundamental saber para onde se está indo.</p>
+
+<h3>1.4.1 Por que Planejar?</h3>
+
+<p>Planejar é necessário porque:</p>
+
+<ul>
+  <li><strong>Garante a cobertura dos conteúdos obrigatórios</strong> dentro da carga horária disponível;</li>
+  <li><strong>Evita redundâncias e lacunas</strong> no processo de aprendizagem;</li>
+  <li><strong>Permite a adequação</strong> das estratégias ao perfil da turma;</li>
+  <li><strong>Cria condições para avaliação consistente</strong> — só é possível avaliar o que foi previamente planejado ensinar;</li>
+  <li><strong>Demonstra profissionalismo</strong> e comprometimento com a qualidade do CFC;</li>
+  <li><strong>Atende exigências legais</strong> — o DETRAN pode solicitar os registros pedagógicos do CFC em fiscalizações.</li>
+</ul>
+
+<h3>1.4.2 Plano de Curso</h3>
+
+<p>O <strong>Plano de Curso</strong> é o documento que organiza a totalidade do curso de habilitação. Seus elementos essenciais são:</p>
+
+<ol>
+  <li><strong>Identificação:</strong> nome do curso, categoria, carga horária total, público-alvo;</li>
+  <li><strong>Justificativa:</strong> por que o curso é necessário e relevante;</li>
+  <li><strong>Objetivos Gerais:</strong> o que o aluno será capaz de fazer ao concluir o curso;</li>
+  <li><strong>Ementa:</strong> resumo dos conteúdos abordados em cada módulo;</li>
+  <li><strong>Metodologia:</strong> abordagens e estratégias pedagógicas gerais;</li>
+  <li><strong>Recursos:</strong> materiais, equipamentos e espaços necessários;</li>
+  <li><strong>Avaliação:</strong> critérios e instrumentos de verificação da aprendizagem;</li>
+  <li><strong>Referências Bibliográficas:</strong> materiais de apoio para instrutores e alunos.</li>
+</ol>
+
+<h3>1.4.3 Plano de Unidade</h3>
+
+<p>O <strong>Plano de Unidade</strong> (ou de módulo) é um nível intermediário entre o Plano de Curso e o Plano de Aula. Organiza um conjunto de aulas que tratam de um mesmo tema ou eixo de conteúdo. Por exemplo: "Módulo de Legislação de Trânsito — 20 horas-aula". Define os objetivos e conteúdos específicos daquele bloco temático, a sequência das aulas e a distribuição do tempo.</p>
+
+<h3>1.4.4 Plano de Aula</h3>
+
+<p>O <strong>Plano de Aula</strong> é o instrumento de planejamento mais imediato e detalhado do instrutor. Deve ser elaborado para cada encontro e conter, no mínimo:</p>
+
+<ol>
+  <li><strong>Dados de identificação:</strong> data, turma, módulo, tema, carga horária;</li>
+  <li><strong>Objetivos específicos:</strong> o que o aluno deverá saber/fazer ao final da aula;</li>
+  <li><strong>Conteúdo:</strong> tópicos a abordar, na ordem planejada;</li>
+  <li><strong>Desenvolvimento:</strong> descrição detalhada de cada momento da aula (abertura, desenvolvimento, fechamento), com tempo estimado;</li>
+  <li><strong>Recursos didáticos:</strong> quais materiais/tecnologias serão utilizados;</li>
+  <li><strong>Avaliação:</strong> como será verificado se o objetivo foi atingido (ex.: pergunta oral, exercício, demonstração prática);</li>
+  <li><strong>Referências:</strong> fontes utilizadas para preparar a aula.</li>
+</ol>
+
+<div class="didactic-box exercise">
+<h4>Atividade de Fixação</h4>
+<p><strong>Exercício 1 — Elaboração de Plano de Aula:</strong></p>
+<p>Com base no modelo apresentado, elabore um Plano de Aula para uma aula de 50 minutos sobre o tema "Uso do cinto de segurança — obrigação legal e proteção à vida". Considere:</p>
+<ul>
+  <li>Defina pelo menos 2 objetivos específicos mensuráveis;</li>
+  <li>Divida a aula em 3 momentos (abertura: 10 min / desenvolvimento: 30 min / fechamento: 10 min);</li>
+  <li>Indique pelo menos 2 recursos didáticos que utilizaria;</li>
+  <li>Descreva como verificaria se o objetivo foi atingido.</li>
+</ul>
+<p>Compartilhe seu plano com um colega e avalie mutuamente a clareza dos objetivos e a coerência entre objetivos, conteúdos e avaliação.</p>
+</div>
+
+<h2>1.5 Objetivos Educacionais: A Taxonomia de Bloom</h2>
+
+<p>Definir bons objetivos educacionais é uma das tarefas mais importantes — e mais negligenciadas — no planejamento de aulas. Um objetivo vago como "o aluno entenderá a importância do cinto de segurança" é problemático porque não é verificável: como saber se o aluno "entendeu"? A <strong>Taxonomia de Bloom</strong> oferece uma linguagem precisa para formular objetivos que sejam ao mesmo tempo claros, observáveis e mensuráveis.</p>
+
+<h3>1.5.1 O que é a Taxonomia de Bloom?</h3>
+
+<p>Proposta pelo psicólogo educacional <strong>Benjamin Bloom</strong> e colaboradores em 1956 (e revisada por Anderson & Krathwohl em 2001), a Taxonomia de Bloom organiza os objetivos educacionais em três domínios:</p>
+
+<ul>
+  <li><strong>Cognitivo:</strong> relacionado ao conhecimento e ao raciocínio intelectual;</li>
+  <li><strong>Afetivo:</strong> relacionado a atitudes, valores e disposições emocionais;</li>
+  <li><strong>Psicomotor:</strong> relacionado a habilidades físicas e procedimentais.</li>
+</ul>
+
+<p>No contexto do CFC, os três domínios são igualmente relevantes: o condutor precisa <em>saber</em> as regras (cognitivo), <em>querer</em> cumpri-las por convicção e não só por medo da multa (afetivo), e <em>saber fazer</em> as manobras com precisão (psicomotor).</p>
+
+<h3>1.5.2 Domínio Cognitivo: Os 6 Níveis</h3>
+
+<p>O domínio cognitivo, o mais utilizado no planejamento de aulas teóricas, organiza-se em seis níveis progressivos, do mais simples ao mais complexo:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Descrição</th>
+      <th>Verbos-chave</th>
+      <th>Exemplo no CFC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. Lembrar</td>
+      <td>Recuperar informações da memória</td>
+      <td>Listar, definir, nomear, identificar</td>
+      <td>"Listar as 5 principais causas de sinistros urbanos"</td>
+    </tr>
+    <tr>
+      <td>2. Compreender</td>
+      <td>Explicar ideias ou conceitos</td>
+      <td>Explicar, resumir, interpretar, classificar</td>
+      <td>"Explicar a diferença entre infração leve e grave"</td>
+    </tr>
+    <tr>
+      <td>3. Aplicar</td>
+      <td>Usar conhecimento em novas situações</td>
+      <td>Usar, executar, implementar, resolver</td>
+      <td>"Aplicar as regras de sinalização em um cruzamento simulado"</td>
+    </tr>
+    <tr>
+      <td>4. Analisar</td>
+      <td>Decompor e examinar partes de um todo</td>
+      <td>Comparar, diferenciar, examinar, distinguir</td>
+      <td>"Analisar os fatores que contribuíram para um sinistro descrito"</td>
+    </tr>
+    <tr>
+      <td>5. Avaliar</td>
+      <td>Fazer julgamentos com base em critérios</td>
+      <td>Julgar, criticar, defender, justificar</td>
+      <td>"Avaliar a adequação de uma manobra de ultrapassagem em situação dada"</td>
+    </tr>
+    <tr>
+      <td>6. Criar</td>
+      <td>Combinar elementos para produzir algo novo</td>
+      <td>Planejar, projetar, elaborar, formular</td>
+      <td>"Elaborar um roteiro de aula prática para um aluno com ansiedade ao volante"</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="important">
+<strong>Princípio da Progressão:</strong> Os níveis da Taxonomia de Bloom são cumulativos — não é possível analisar algo que não se compreende, nem avaliar o que não se sabe analisar. O planejamento do instrutor deve garantir que os alunos percorram essa escada em ordem, especialmente em tópicos complexos como legislação de trânsito e direção defensiva.
+</div>
+
+<h3>1.5.3 Como Formular Objetivos com a Taxonomia de Bloom</h3>
+
+<p>Um objetivo bem formulado deve ser:</p>
+
+<ul>
+  <li><strong>Observável:</strong> descrito em termos de comportamento que pode ser visto ou medido;</li>
+  <li><strong>Mensurável:</strong> possível de verificar se foi atingido;</li>
+  <li><strong>Alcançável:</strong> realista para a carga horária e o perfil dos alunos;</li>
+  <li><strong>Relevante:</strong> diretamente ligado às competências do condutor.</li>
+</ul>
+
+<p><strong>Fórmula básica:</strong> <em>Verbo de ação (nível Bloom) + conteúdo + condição/critério de desempenho.</em></p>
+
+<p>Exemplos:</p>
+<ul>
+  <li><em>Fraco:</em> "O aluno aprenderá sobre sinalização viária."</li>
+  <li><em>Melhorado:</em> "Ao final da aula, o aluno será capaz de <strong>identificar</strong> (Lembrar) os 12 tipos de placas de regulamentação mais comuns, associando cada uma à sua consequência jurídica para o condutor."</li>
+  <li><em>Avançado:</em> "Ao final do módulo, o aluno será capaz de <strong>analisar</strong> (Analisar) um cenário de cruzamento com múltiplos sinais e decidir corretamente o comportamento adequado, justificando sua escolha com base no CTB."</li>
+</ul>
+
+<div class="didactic-box reflection">
+<h4>Questão para Reflexão</h4>
+<p>Considere o objetivo: "O aluno deverá ter consciência da importância do respeito aos pedestres". Esse objetivo pertence a qual domínio da Taxonomia de Bloom (cognitivo, afetivo ou psicomotor)? Ele é observável e mensurável da forma como está escrito? Como você o reescreveria para torná-lo mais preciso e verificável na prática do CFC?</p>
+</div>
+
+<div class="didactic-box case-study">
+<h4>Estudo de Caso: Planejando com Bloom para Diferentes Perfis</h4>
+<p><strong>Situação:</strong> Mariana, instrutora em um CFC de cidade de médio porte, percebeu que sua turma era muito heterogênea: alguns alunos nunca tinham dirigido (perfil iniciante), outros já tinham experiência informal de direção em propriedades rurais (perfil com prática informal), e dois eram motoristas profissionais em processo de renovação de categoria.</p>
+<p><strong>Desafio:</strong> Como planejar objetivos para um tema único (ex.: "Dirigir em condições adversas de tempo") que fosse ao mesmo tempo desafiador para os mais experientes e acessível para os iniciantes?</p>
+<p><strong>Solução pedagógica de Mariana:</strong> Ela planejou objetivos em diferentes níveis de Bloom para o mesmo tema:</p>
+<ul>
+  <li>Para iniciantes: "Identificar as condições meteorológicas que exigem redução de velocidade" (Lembrar/Compreender);</li>
+  <li>Para perfil intermediário: "Aplicar as técnicas de frenagem em fundo de curso simulado com piso molhado" (Aplicar);</li>
+  <li>Para avançados: "Avaliar criticamente uma tomada de decisão em vídeo de situação de neblina densa" (Avaliar).</li>
+</ul>
+<p><strong>Resultado:</strong> Todos os alunos sentiram-se desafiados no seu nível de competência. Os mais experientes não se entediaram; os iniciantes não se sentiram perdidos. A turma desenvolveu respeito mútuo pelas diferentes experiências e todos avançaram.</p>
+</div>
+
+<h2>1.6 Seleção e Organização de Conteúdos</h2>
+
+<p>Após definir os objetivos, o instrutor precisa selecionar e organizar os conteúdos que permitirão ao aluno atingi-los. Essa etapa exige tanto conhecimento técnico do tema (o instrutor precisa conhecer bem o que vai ensinar) quanto sensibilidade pedagógica (saber o que é essencial, o que é complementar e qual a melhor ordem para apresentar as informações).</p>
+
+<h3>1.6.1 Critérios para Seleção de Conteúdos</h3>
+
+<p>Nem tudo que existe sobre um tema precisa ser ensinado em uma aula. Os critérios para selecionar conteúdos incluem:</p>
+
+<ul>
+  <li><strong>Relevância:</strong> contribuição direta para a segurança no trânsito e para a aprovação nos exames;</li>
+  <li><strong>Validade:</strong> conteúdo atualizado, em conformidade com a legislação vigente (CTB, Resoluções CONTRAN);</li>
+  <li><strong>Significância:</strong> conexão com a realidade cotidiana do aluno-condutor;</li>
+  <li><strong>Adequação:</strong> compatível com o nível de escolaridade e experiência prévia dos alunos;</li>
+  <li><strong>Suficiência:</strong> cobre o necessário para atingir os objetivos sem sobrecarga desnecessária.</li>
+</ul>
+
+<h3>1.6.2 Princípios de Organização dos Conteúdos</h3>
+
+<p>A ordem em que os conteúdos são apresentados importa tanto quanto os conteúdos em si. Os principais princípios de organização são:</p>
+
+<ul>
+  <li><strong>Do simples ao complexo:</strong> apresentar conceitos básicos antes dos avançados. Ex.: ensinar a funcionamento dos sinais de trânsito antes das regras de preferência em cruzamentos complexos;</li>
+  <li><strong>Do geral ao particular:</strong> contextualizar o todo antes de detalhar as partes. Ex.: apresentar o Sistema Nacional de Trânsito antes de detalhar as competências do DETRAN;</li>
+  <li><strong>Do concreto ao abstrato:</strong> partir de exemplos práticos, vivências e casos reais antes de introduzir conceitos teóricos;</li>
+  <li><strong>Da teoria à prática (e vice-versa):</strong> articular os conteúdos teóricos com aplicações práticas imediatas;</li>
+  <li><strong>Continuidade e sequenciamento:</strong> garantir que cada aula seja uma continuidade lógica da anterior, com revisão e conexão explícita entre os temas.</li>
+</ul>
+
+<h3>1.6.3 Tipos de Conteúdos no CFC</h3>
+
+<p>É útil distinguir três tipos de conteúdos, cada um exigindo estratégias diferentes de ensino:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo</th>
+      <th>Definição</th>
+      <th>Exemplos no CFC</th>
+      <th>Estratégia Indicada</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Conceitual (Saber)</td>
+      <td>Fatos, conceitos e princípios</td>
+      <td>Definição de infração, tipos de habilitação, artigos do CTB</td>
+      <td>Aula expositiva dialogada, mapas conceituais, leituras</td>
+    </tr>
+    <tr>
+      <td>Procedimental (Saber Fazer)</td>
+      <td>Técnicas, habilidades e processos</td>
+      <td>Manobras de estacionamento, troca de marcha, uso de espelhos</td>
+      <td>Demonstração + prática supervisionada, simulador</td>
+    </tr>
+    <tr>
+      <td>Atitudinal (Saber Ser)</td>
+      <td>Valores, normas e atitudes</td>
+      <td>Respeito ao pedestre, responsabilidade, empatia no trânsito</td>
+      <td>Discussão de casos, análise de situações reais, reflexão</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="didactic-box exercise">
+<h4>Atividade de Fixação</h4>
+<p><strong>Exercício 2 — Classificando Conteúdos com Bloom e os 3 Tipos:</strong></p>
+<p>Para cada objetivo abaixo, indique: (a) o nível da Taxonomia de Bloom correspondente; (b) o tipo de conteúdo (conceitual, procedimental ou atitudinal); (c) uma estratégia de ensino adequada.</p>
+<ol>
+  <li>"O aluno deverá executar a manobra de garagem com recuo em até 3 tentativas, sem exceder os limites da vaga demarcada."</li>
+  <li>"O aluno deverá explicar as condições que caracterizam o crime de embriaguez ao volante, conforme o art. 306 do CTB."</li>
+  <li>"O aluno deverá demonstrar comportamento de cessão de passagem a pedestres em faixas, mesmo quando não há fiscalização visível."</li>
+</ol>
+</div>
+
+<div class="didactic-box forum-topic">
+<h4>Tópico para Discussão</h4>
+<p><strong>Fórum: "O que faz um bom instrutor de trânsito?"</strong></p>
+<p>Considerando tudo o que estudamos neste tópico — conceito de didática, seus níveis de planejamento, a Taxonomia de Bloom e a organização de conteúdos — reflita e participe do fórum respondendo:</p>
+<ol>
+  <li>Na sua opinião, qual é a competência didática mais importante para um instrutor de CFC? Por quê?</li>
+  <li>Que diferença você percebe entre um instrutor que planeja e um que improvisa, na prática cotidiana do CFC?</li>
+  <li>Como você utilizaria a Taxonomia de Bloom para planejar a evolução de um aluno ao longo das 20 horas de prática de direção?</li>
+</ol>
+<p>Leia as contribuições de pelo menos dois colegas e comente construtivamente, relacionando com os conteúdos estudados.</p>
+</div>
+
+<div class="didactic-box legal-reference">
+<h4>Referência Legal</h4>
+<p><strong>CTB — Lei 9.503/1997, Art. 1º, §2º e §5º:</strong></p>
+<p>"O trânsito, em condições seguras, é um direito de todos e dever dos órgãos e entidades componentes do Sistema Nacional de Trânsito, a estes cabendo, no âmbito das respectivas competências, adotar as medidas destinadas a assegurar esse direito." (§2º)</p>
+<p>"Os órgãos e entidades de trânsito pertencentes ao Sistema Nacional de Trânsito darão prioridade em suas ações à defesa da vida, nela incluída a preservação da saúde e do meio-ambiente." (§5º)</p>
+<p><strong>Implicação pedagógica:</strong> O instrutor de trânsito é, nos termos da lei, um agente do Sistema Nacional de Trânsito. Sua atuação didática não é apenas profissional — é um serviço à sociedade, diretamente vinculado à garantia do direito constitucional à segurança. Planejar bem as aulas é cumprir esse dever legal e ético.</p>
+<p><strong>Resolução CONTRAN 1020/2025:</strong> Estabelece os requisitos curriculares e pedagógicos para os cursos de formação de condutores, incluindo a exigência de planos de aula e registros pedagógicos pelos CFCs. O descumprimento pode ensejar sanções administrativas ao estabelecimento.</p>
+</div>
+
+<div class="didactic-box video-link">
+<h4>Vídeo Sugerido</h4>
+<p><strong>Sugestão de vídeo: "A Taxonomia de Bloom Revisada — Da Teoria à Sala de Aula"</strong></p>
+<p><em>Duração estimada: 15–20 minutos</em></p>
+<p>Procure no YouTube por vídeos do canal do <strong>CIEB</strong> (Centro de Inovação para a Educação Brasileira) ou do canal <strong>Nova Escola</strong> sobre Taxonomia de Bloom. Assista a um vídeo completo sobre o tema e, ao assistir, reflita:</p>
+<ul>
+  <li>Como cada nível da taxonomia se manifesta no contexto específico do ensino de direção veicular?</li>
+  <li>Quais níveis você acredita que são mais frequentemente negligenciados nos cursos de habilitação tradicionais?</li>
+  <li>Como os exemplos do vídeo podem ser adaptados para aulas práticas e teóricas no CFC?</li>
+</ul>
+<p>Registre suas observações e traga para discussão no próximo encontro presencial.</p>
+</div>
+
+<div class="didactic-box reflection">
+<h4>Questão para Reflexão</h4>
+<p>Imagine que você é instrutor há 5 anos e sempre deu suas aulas "no piloto automático", sem plano de aula escrito. Um novo colega recém-formado chega ao CFC planejando cada detalhe. Inicialmente você sente certo orgulho de sua experiência acumulada. Mas após um mês, percebe que os alunos do colega têm melhores resultados nos exames teóricos. O que essa situação revela sobre a relação entre experiência profissional e competência pedagógica? Como a didática pode ser um diferencial mesmo para instrutores veteranos?</p>
+</div>
+
+<div class="glossary">
+<h3>Glossário</h3>
+<dl>
+  <dt>Didática</dt>
+  <dd>Ciência e arte de ensinar; conjunto de princípios, métodos e técnicas que orientam o processo de ensino-aprendizagem com o objetivo de torná-lo eficaz e significativo para o aluno.</dd>
+
+  <dt>Taxonomia de Bloom</dt>
+  <dd>Sistema de classificação dos objetivos educacionais em três domínios (cognitivo, afetivo e psicomotor) e, no domínio cognitivo, em seis níveis progressivos de complexidade: lembrar, compreender, aplicar, analisar, avaliar e criar.</dd>
+
+  <dt>Planejamento Macro</dt>
+  <dd>Nível mais amplo de planejamento educacional, definido por órgãos governamentais (SENATRAN, CONTRAN), que estabelece diretrizes nacionais para os cursos de formação de condutores.</dd>
+
+  <dt>Planejamento Meso</dt>
+  <dd>Nível intermediário de planejamento, correspondente ao Plano de Curso do CFC, que organiza módulos, conteúdos e metodologias para um curso completo.</dd>
+
+  <dt>Planejamento Micro</dt>
+  <dd>Nível mais específico de planejamento, correspondente ao Plano de Aula, que detalha objetivos, conteúdos, estratégias e avaliação de um único encontro ou aula.</dd>
+
+  <dt>Plano de Aula</dt>
+  <dd>Documento elaborado pelo instrutor antes de cada aula, contendo objetivos específicos, conteúdos, sequência de atividades, tempo de cada momento, recursos didáticos e forma de avaliação da aprendizagem.</dd>
+
+  <dt>Objetivo Educacional</dt>
+  <dd>Descrição clara e observável do que o aluno será capaz de fazer ao final de uma aula, unidade ou curso. Um bom objetivo é formulado com verbo de ação específico (da Taxonomia de Bloom), conteúdo e critério de desempenho.</dd>
+
+  <dt>Domínio Cognitivo</dt>
+  <dd>Dimensão dos objetivos educacionais relacionada ao conhecimento intelectual: memorização, compreensão, aplicação, análise, avaliação e criação de informações e conceitos.</dd>
+
+  <dt>Domínio Afetivo</dt>
+  <dd>Dimensão dos objetivos educacionais relacionada a atitudes, valores, motivações e disposições emocionais do aluno — fundamental para a formação de condutores com comportamento cidadão.</dd>
+
+  <dt>Domínio Psicomotor</dt>
+  <dd>Dimensão dos objetivos educacionais relacionada a habilidades físicas e procedimentais — central nas aulas práticas de direção veicular.</dd>
+
+  <dt>Mediação Pedagógica</dt>
+  <dd>Papel do instrutor como facilitador e orientador da construção do conhecimento pelo aluno, em vez de mero transmissor de informações. Conceito derivado da teoria sociocultural de Vygotsky.</dd>
+
+  <dt>Conteúdo Conceitual</dt>
+  <dd>Tipo de conteúdo relacionado a fatos, conceitos e princípios que o aluno deve conhecer (saber). Ex.: artigos do CTB, definições de categorias de habilitação.</dd>
+
+  <dt>Conteúdo Procedimental</dt>
+  <dd>Tipo de conteúdo relacionado a técnicas, habilidades e procedimentos que o aluno deve executar (saber fazer). Ex.: manobras de direção, procedimentos em caso de sinistro.</dd>
+
+  <dt>Conteúdo Atitudinal</dt>
+  <dd>Tipo de conteúdo relacionado a valores, normas e atitudes que o aluno deve desenvolver (saber ser). Ex.: respeito ao pedestre, responsabilidade no trânsito, empatia com outros condutores.</dd>
+
+  <dt>CFC (Centro de Formação de Condutores)</dt>
+  <dd>Estabelecimento credenciado pelo DETRAN responsável pela formação teórica e prática de candidatos à habilitação veicular, nos termos do CTB e das Resoluções CONTRAN.</dd>
+
+  <dt>CONTRAN (Conselho Nacional de Trânsito)</dt>
+  <dd>Órgão máximo normativo do Sistema Nacional de Trânsito, responsável por estabelecer as normas gerais de circulação, habilitação e educação para o trânsito no Brasil.</dd>
+
+  <dt>Sinistro de Trânsito</dt>
+  <dd>Termo técnico oficial (adotado pelo DENATRAN/SENATRAN e pelo movimento de segurança viária) para designar o que popularmente se chama de "acidente de trânsito". O uso do termo "sinistro" reforça a ideia de que a maioria desses eventos é evitável e não meramente "acidental".</dd>
+</dl>
+</div>
+
+<div class="bibliography">
+<h3>Referências e Bibliografia</h3>
+<h4>Legislação</h4>
+<ul>
+  <li>BRASIL. <strong>Lei nº 9.503, de 23 de setembro de 1997.</strong> Institui o Código de Trânsito Brasileiro. Brasília: Presidência da República, 1997. (CTB)</li>
+  <li>BRASIL. <strong>Resolução CONTRAN nº 1020, de 2025.</strong> Estabelece os requisitos para os cursos de formação e reciclagem de condutores de veículos automotores e elétricos. Brasília: CONTRAN, 2025.</li>
+  <li>BRASIL. <strong>Resolução CONTRAN nº 493/2014</strong> e alterações. Dispõe sobre o processo de habilitação de condutores de veículos automotores e elétricos. Brasília: CONTRAN, 2014.</li>
+</ul>
+<h4>Bibliografia</h4>
+<ul>
+  <li>BLOOM, Benjamin S. et al. <strong>Taxonomy of Educational Objectives: The Classification of Educational Goals.</strong> New York: Longmans, 1956.</li>
+  <li>ANDERSON, L. W.; KRATHWOHL, D. R. (Orgs.). <strong>A Taxonomy for Learning, Teaching and Assessing: A Revision of Bloom's Taxonomy of Educational Objectives.</strong> New York: Longman, 2001.</li>
+  <li>COMENIUS, Jan Amos. <strong>Didática Magna.</strong> Tradução de Joaquim Ferreira Gomes. Lisboa: Fundação Calouste Gulbenkian, 1985. [Original: 1657]</li>
+  <li>LIBÂNEO, José Carlos. <strong>Didática.</strong> 2. ed. São Paulo: Cortez, 2013.</li>
+  <li>VEIGA, Ilma Passos Alencastro. <strong>A prática pedagógica do professor de didática.</strong> 12. ed. Campinas: Papirus, 2012.</li>
+  <li>VYGOTSKY, Lev S. <strong>A formação social da mente.</strong> 7. ed. São Paulo: Martins Fontes, 2007.</li>
+  <li>MASETTO, Marcos Tarciso. <strong>Competência pedagógica do professor universitário.</strong> 3. ed. São Paulo: Summus Editorial, 2015.</li>
+  <li>DENATRAN. <strong>Manual do Candidato à Habilitação.</strong> Brasília: DENATRAN, 2010.</li>
+  <li>IPEA. <strong>Impactos socioeconômicos dos acidentes de trânsito nas aglomerações urbanas brasileiras.</strong> Brasília: IPEA, 2015.</li>
+</ul>
+<h4>Sites Oficiais</h4>
+<ul>
+  <li>Portal do SENATRAN / Ministério dos Transportes: <strong>www.gov.br/transportes</strong></li>
+  <li>CONTRAN — Resoluções e Deliberações: <strong>www.denatran.gov.br/contran</strong></li>
+  <li>Nova Escola (recursos pedagógicos): <strong>novaescola.org.br</strong></li>
+  <li>CIEB — Centro de Inovação para a Educação Brasileira: <strong>cieb.net.br</strong></li>
+</ul>
+</div>
+
+<div class="closing">
+<p>Ao chegar ao fim deste tópico, você deu o primeiro e talvez mais importante passo da sua formação como instrutor: compreendeu que ensinar é uma profissão — e como toda profissão séria, exige método, preparo e compromisso contínuo. A didática não é um conjunto de receitas prontas, mas um arcabouço de princípios que, quando bem compreendidos e aplicados com sensibilidade, transformam cada aula num momento de crescimento real para o aluno. Você vai ao volante com um aluno que, daqui a alguns meses, estará dirigindo sozinho em vias públicas, tomando decisões em frações de segundo. A qualidade do seu planejamento, a clareza dos seus objetivos e a riqueza da sua mediação pedagógica estarão ali, invisíveis mas presentes, em cada escolha que ele fizer. Isso é o poder — e a responsabilidade — do educador de trânsito. Bem-vindo a essa missão.</p>
+</div>
+        </div>
+
+        <div class="topic-nav">
+            <a href="modulo-01-topico-05-relacionamentos-no-transito.html">&larr; Anterior</a>
+            <a href="modulo-02-topico-02-orientacoes-pedagogicas.html">Próximo &rarr;</a>
+        </div>
+
+        <div class="footer">
+            <a href="https://www.condutorlegalead.com.br">Instrutor de Trânsito EAD</a> — Curso de Reciclagem para Condutores — 45h/a — Resolução CONTRAN 1020/2025<br>
+            Material didático | ITT — Instituto Tecnológico de Transporte e Trânsito
+        </div>
+    </div>
+</body>
+</html>
